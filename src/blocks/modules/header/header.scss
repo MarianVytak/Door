@@ -86,6 +86,15 @@
 
 .header__mid_info_mail_link {
   font-size: 19px;
+  letter-spacing: 0.35px;
+  &:hover {
+    .link {
+      color: $blue;
+      &:before {
+        border-color: $blue;
+      }
+    }
+  }
   i {
     margin-right: 8px;
     color: $blue;
@@ -129,7 +138,77 @@
 
 // HEADER BOT
 .header__bot {
+  background-color: $main;
 }
 
 .header__bot_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+}
+
+.header__bot_catalog {
+  width: 265px;
+  height: 100%;
+  background-color: $blue;
+}
+
+.header__bot_catalog_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 17px;
+  color: $white;
+  text-transform: uppercase;
+  &:hover {
+    color: $white;
+  }
+  i {
+    margin-right: 15px;
+  }
+}
+
+.header__bot_navigation_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__bot_navigation_list_item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__bot_navigation_list_item_link {
+  position: relative;
+  font-weight: bold;
+  color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    opacity: 0;
+    transition: .3s;
+  }
+  &:hover {
+    color: $white;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+.header__bot_search {
+  width: 375px;
+  height: 36px;
 }
