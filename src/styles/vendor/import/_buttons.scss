@@ -1,0 +1,9 @@
+.btn-1 {
+  border-radius: 8px;
+  border: 2px solid $white;
+  box-shadow: 0 0 9px 1px rgba(179, 178, 179, 0.75);
+  font-size: 15px;
+  &:hover {
+    border: 2px solid $white;
+  }
+}

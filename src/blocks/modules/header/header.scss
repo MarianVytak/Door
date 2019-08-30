@@ -58,9 +58,73 @@
 
 // HEADER MID
 .header__mid {
+  padding: 15px 0;
 }
 
 .header__mid_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mid_phone_link {
+  font-size: 26px;
+  color: $main;
+  line-height: 1.46;
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.header__mid_info_work {
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px dashed #b4b4b4;
+  font-size: 14px;
+}
+
+.header__mid_info_mail_link {
+  font-size: 19px;
+  i {
+    margin-right: 8px;
+    color: $blue;
+  }
+}
+
+.header__mid_basket_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: $main;
+    color: $white;
+  }
+}
+
+.header__mid_basket_link_content_box {
+  display: block;
+  line-height: 1.4;
+}
+
+.header__mid_basket_link_icon {
+  margin-right: 15px;
+  font-size: 43px;
+}
+
+.header__mid_basket_link_content_text {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.header__mid_basket_link_content_price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
 }
 
 // HEADER BOT
