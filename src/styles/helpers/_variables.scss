@@ -1,0 +1,29 @@
+$white: #ffffff !default;
+$black: #000000 !default;
+$main: #1266b1 !default;
+$blue: #47bce3 !default;
+$orange: #f7704d !default;
+
+$colors: () !default;
+$colors: map-merge(
+                (
+                        "white": $white,
+                        "black": $black,
+                        "main": $main,
+                        "blue": $blue,
+                        "orange": $orange,
+                ),
+                $colors
+);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                (
+                        "white": $white,
+                        "black": $black,
+                        "main": $main,
+                        "blue": $blue,
+                        "orange": $orange,
+                ),
+                $theme-colors
+);
