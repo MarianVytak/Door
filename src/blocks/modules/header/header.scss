@@ -149,6 +149,7 @@
 }
 
 .header__bot_catalog {
+  position: relative;
   width: 265px;
   height: 100%;
   background-color: $blue;
@@ -172,10 +173,49 @@
   }
 }
 
+.header__bot_catalog_list {
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 5px 5px rgba(224, 224, 224, 0.75);
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  background-color: $white;
+  overflow: hidden;
+  display: none;
+}
+
 .header__bot_navigation_list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.header__bot_catalog_list_item {
+  border-bottom: 1px solid #e7e7e7;
+  &:last-child {
+    border: none;
+  }
+}
+
+.header__bot_catalog_list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: $black;
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+  &.active {
+    background-color: $orange;
+    font-weight: 500;
+    color: $white;
+  }
 }
 
 .header__bot_navigation_list_item {
