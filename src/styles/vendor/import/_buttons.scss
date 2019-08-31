@@ -7,3 +7,14 @@
     border: 2px solid $white;
   }
 }
+
+.btn-2 {
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  border: 2px solid $white;
+  box-shadow: 0 0 9px 1px rgba(179, 178, 179, 0.75);
+  font-size: 15px;
+  &:hover {
+    border: 2px solid $white;
+  }
+}

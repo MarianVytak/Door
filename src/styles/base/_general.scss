@@ -20,6 +20,11 @@ a {
     }
 }
 
+img {
+    width: auto;
+    max-width: 100%;
+}
+
 .link {
     position: relative;
     color: $main;
