@@ -1,0 +1,16 @@
+.catalog {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 265px minmax(0,1fr);
+  -ms-grid-columns: 265px minmax(0,1fr);
+  padding-top: 25px;
+}
+
+.sidebar {
+  -ms-grid-column: 1;
+}
+
+.main {
+  -ms-grid-column: 2;
+  margin-left: 15px;
+}
