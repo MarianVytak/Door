@@ -1,0 +1,16 @@
+.h3 {
+  text-transform: uppercase;
+}
+
+.title-line {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 3px;
+    background-color: $blue;
+  }
+}
