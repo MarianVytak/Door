@@ -1,0 +1,71 @@
+// Sidebar Colors
+.sidebar__colors {
+  height: 418px;
+  overflow-y: auto;
+  .custom-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    &.active {
+      .sidebar__colors_icon {
+        border: 2px solid $blue;
+      }
+      .custom-control-label {
+        font-weight: bold;
+        color: $blue;
+      }
+    }
+  }
+  .custom-control-label {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.sidebar__colors_icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    max-width: 30px;
+  }
+  &.white {
+    border: 1px solid #085892;
+    background-color: #ffffff;
+  }
+  &.yellow {
+    border: 2px solid #f7d327;
+    background-color: #f7d327;
+  }
+  &.green {
+    border: 2px solid #1c382c;
+    background-color: #1c382c;
+  }
+  &.blue {
+    border: 2px solid #1f2f50;
+    background-color: #1f2f50;
+  }
+  &.red {
+    border: 2px solid #ca3224;
+    background-color: #ca3224;
+  }
+  &.gray {
+    border: 2px solid #4b4b43;
+    background-color: #4b4b43;
+  }
+  &.black {
+    border: 2px solid #010000;
+    background-color: #010000;
+  }
+}

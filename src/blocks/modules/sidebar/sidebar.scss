@@ -14,7 +14,8 @@
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
-  color: #454545;
+  color: $white;
+  background-color: $blue;
   &:hover {
     color: $white;
   }
@@ -30,6 +31,8 @@
     transition: transform .3s;
   }
   &.collapsed {
+    background-color: $white;
+    color: #454545;
     i {
       transform: rotate(180deg);
     }
@@ -44,3 +47,6 @@
     padding: 1rem;
   }
 }
+
+@import "sidebar-check-list";
+@import "sidebar-colors";

@@ -35,3 +35,39 @@
   font-size: 20px;
   color: $white;
 }
+
+
+// CHECKBOX
+.custom-control {
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.custom-control-label {
+  font-size: 15px;
+  color: #454545;
+  &:before {
+    top: -0.05rem;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+  }
+  &:after {
+    top: -0.05rem;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #adb5bd;
+}
