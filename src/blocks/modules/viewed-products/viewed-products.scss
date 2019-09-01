@@ -1,0 +1,26 @@
+.viewed-products {
+  padding: 60px 0;
+}
+
+.viewed-products__slider {
+  margin-top: 40px;
+  padding: 0 15px;
+  .slick-list {
+    padding: 10px 5px;
+  }
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+}
+
+.viewed-products__slider_item {
+  padding: 0 5px;
+  .catalog__list_item {
+    &:hover {
+      box-shadow: 0 5px 10px rgba(179, 178, 179, 0.75);
+    }
+  }
+}
