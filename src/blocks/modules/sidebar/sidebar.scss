@@ -40,4 +40,7 @@
   box-shadow: 0 5px 5px rgba(224, 224, 224, 0.75);
   border-radius: 4px;
   border: 1px solid #e7e7e7;
+  .card-body {
+    padding: 1rem;
+  }
 }
