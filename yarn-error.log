@@ -43,7 +43,6 @@ npm manifest:
           "build styles": "gulp styles --production",
           "build scripts": "gulp scripts --production",
           "build images": "gulp images --production",
-          "build webp": "gulp webp --production",
           "build fonts": "gulp fonts --production",
           "build favicons": "gulp favicons --production",
           "build gzip": "gulp gzip --production",
@@ -75,12 +74,10 @@ npm manifest:
           "gulp-sass": "^4.0.2",
           "gulp-sourcemaps": "^2.6.4",
           "gulp-watch": "^5.0.0",
-          "gulp-webp": "^4.0.1",
           "imagemin-giflossy": "^5.1.10",
           "imagemin-jpeg-recompress": "^6.0.0",
           "imagemin-mozjpeg": "^8.0.0",
           "imagemin-pngquant": "^8.0.0",
-          "imagemin-webp": "^5.0.0",
           "imagemin-zopfli": "^6.0.0",
           "require-dir": "^1.2.0",
           "stylelint": "^10.0.1",
@@ -3181,15 +3178,7 @@ Lockfile:
     integrity sha1-mI3zP+qxke95mmE2nddsF635V+o=
     dependencies:
       array-find-index "^1.0.1"
-  
-  cwebp-bin@^5.0.0:
-    version "5.1.0"
-    resolved "https://registry.yarnpkg.com/cwebp-bin/-/cwebp-bin-5.1.0.tgz#d5bea87c127358558e7bf7a90a6d440d42dcb074"
-    integrity sha512-BsPKStaNr98zfxwejWWLIGELbPERULJoD2v5ijvpeutSAGsegX7gmABgnkRK7MUucCPROXXfaPqkLAwI509JzA==
-    dependencies:
-      bin-build "^3.0.0"
-      bin-wrapper "^4.0.1"
-      logalot "^2.1.0"
+
   
   cyclist@~0.2.2:
     version "0.2.2"
@@ -5410,15 +5399,6 @@ Lockfile:
       vinyl "^2.1.0"
       vinyl-file "^2.0.0"
   
-  gulp-webp@^4.0.1:
-    version "4.0.1"
-    resolved "https://registry.yarnpkg.com/gulp-webp/-/gulp-webp-4.0.1.tgz#c3cf0ee8362fced253784c50bc29a44a06d98ed1"
-    integrity sha512-ChrghhDJcLDGDNPvH4LwFX2jDOOunKmshYLc4tL3BajL/aGSYXRc+sY51R/6A9veZ7Maf/pzZqzNf6zkfItARA==
-    dependencies:
-      imagemin-webp "^5.0.0"
-      plugin-error "^1.0.1"
-      through2 "^3.0.0"
-  
   gulp@^4.0.0:
     version "4.0.2"
     resolved "https://registry.yarnpkg.com/gulp/-/gulp-4.0.2.tgz#543651070fd0f6ab0a0650c6a3e6ff5a7cb09caa"
@@ -5781,15 +5761,6 @@ Lockfile:
     dependencies:
       is-svg "^3.0.0"
       svgo "^1.0.5"
-  
-  imagemin-webp@^5.0.0:
-    version "5.1.0"
-    resolved "https://registry.yarnpkg.com/imagemin-webp/-/imagemin-webp-5.1.0.tgz#ddb1307ad97aff97293c5a600e384e40c07f68a7"
-    integrity sha512-BsPTpobgbDPFBBsI3UflnU/cpIVa15qInEDBcYBw16qI/6XiB4vDF/dGp9l4aM3pfFDDYqR0mANMcKpBD7wbCw==
-    dependencies:
-      cwebp-bin "^5.0.0"
-      exec-buffer "^3.0.0"
-      is-cwebp-readable "^2.0.1"
   
   imagemin-zopfli@^6.0.0:
     version "6.0.0"
