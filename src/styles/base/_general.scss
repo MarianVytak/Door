@@ -53,6 +53,10 @@ img {
   }
 }
 
+.read-more-content {
+  display: none;
+}
+
 @include media-breakpoint-up(xl) {
   .container {
     max-width: 1230px;

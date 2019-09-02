@@ -4,35 +4,43 @@
   border: 1px solid #e7e7e7;
   background-color: $white;
 }
+
 .sidebar__reviews_title {
   margin: 1rem 1rem 0;
   font-weight: 500;
   font-size: 19px;
   text-transform: uppercase;
 }
+
 .sidebar__reviews_list {
   margin-top: 20px;
 }
+
 .sidebar__reviews_list_card {
   padding: 0.5rem 1rem 0.7rem;
   border-bottom: 1px solid #ebeaea;
 }
+
 .sidebar__reviews_list_card_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .sidebar__reviews_list_card_header_title {
   font-weight: 500;
 }
+
 .sidebar__reviews_list_card_header_date {
   font-weight: 300;
   font-size: 14px;
   color: #454545;
 }
+
 .sidebar__reviews_list_card_body {
   padding-top: 10px;
 }
+
 .sidebar__reviews_list_card_body_title {
   font-weight: 500;
   font-size: 16px;
@@ -40,21 +48,26 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+
 .sidebar__reviews_list_card_body_text {
   padding-top: 3px;
   font-weight: 300;
   font-size: 14px;
 }
+
 .sidebar__reviews_list_card_footer {
   text-align: right;
 }
+
 .sidebar__reviews_list_card_footer_link {
   font-weight: 500;
   font-size: 13px;
 }
+
 .sidebar__reviews_watch-all {
   padding: 0.4rem 1rem 0.6rem;
 }
+
 .sidebar__reviews_watch-all_link {
   font-weight: 500;
   font-size: 13px;

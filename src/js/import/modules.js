@@ -6,3 +6,4 @@ import "%modules%/viewed-products/viewed-products";
 import "%modules%/footer/footer";
 
 import "./libs/range";
+import "./libs/read-more";

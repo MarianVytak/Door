@@ -10,7 +10,31 @@
 
                 @@include("slider/slider.html")
 
-                @@include("../catalog-list/catalog-list.html")
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-popular-list" data-toggle="list"
+                       href="#list-popular" role="tab" aria-controls="popular">популярные товары</a>
+                    <a class="list-group-item list-group-item-action" id="list-hits-list" data-toggle="list"
+                       href="#list-hits" role="tab" aria-controls="hits">хиты</a>
+                    <a class="list-group-item list-group-item-action" id="list-new-list" data-toggle="list"
+                       href="#list-new" role="tab" aria-controls="new">новинки</a>
+                    <a class="list-group-item list-group-item-action" id="list-sale-list" data-toggle="list"
+                       href="#list-sale" role="tab" aria-controls="sale">распродажа дня</a>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-popular" role="tabpanel"
+                         aria-labelledby="list-popular-list">
+                        @@include("../catalog-list/catalog-list.html")
+                    </div>
+                    <div class="tab-pane fade" id="list-hits" role="tabpanel" aria-labelledby="list-hits-list">
+                        @@include("../catalog-list/catalog-list.html")
+                    </div>
+                    <div class="tab-pane fade" id="list-new" role="tabpanel" aria-labelledby="list-new-list">
+                        @@include("../catalog-list/catalog-list.html")
+                    </div>
+                    <div class="tab-pane fade" id="list-sale" role="tabpanel" aria-labelledby="list-sale-list">
+                        @@include("../catalog-list/catalog-list.html")
+                    </div>
+                </div>
 
             </main>
             <!-- /.main -->
