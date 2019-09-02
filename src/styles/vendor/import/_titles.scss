@@ -2,6 +2,10 @@
   text-transform: uppercase;
 }
 
+.h5 {
+  font-size: 1.125rem;
+}
+
 .title-line {
   position: relative;
   &:before {
@@ -13,4 +17,12 @@
     height: 3px;
     background-color: $blue;
   }
+}
+
+.text-small {
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
 }

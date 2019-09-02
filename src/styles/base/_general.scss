@@ -53,10 +53,6 @@ img {
   }
 }
 
-.bold {
-  font-weight: bold;
-}
-
 @include media-breakpoint-up(xl) {
   .container {
     max-width: 1230px;
