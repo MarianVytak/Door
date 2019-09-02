@@ -5,3 +5,10 @@
 .home__desc {
   padding: 50px 0 30px;
 }
+
+
+/* ========== HOME MEDIA ========== */
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {}

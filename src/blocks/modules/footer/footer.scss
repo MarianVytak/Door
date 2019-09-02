@@ -129,3 +129,59 @@
     border-color: transparent transparent $white transparent;
   }
 }
+
+
+
+/* ========== FOOTER MEDIA ========== */
+@include media-breakpoint-down(lg) {
+  .footer__top_item {
+    width: 50%;
+  }
+  .footer__copy {
+    margin-right: 45px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .footer__bot {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer__copy {
+    order: 2;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .footer__networks {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .footer__networks_list {
+    margin-left: 0;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .footer__contacts_list_item {
+    white-space: normal;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .footer__top_item {
+    width: 100%;
+    text-align: center;
+  }
+  .payments__list {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .footer__networks {
+    .h5 {
+      display: none;
+    }
+  }
+  .footer__networks_list_item {
+    margin-right: 5px;
+  }
+}
