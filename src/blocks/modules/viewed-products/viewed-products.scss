@@ -24,3 +24,12 @@
     }
   }
 }
+
+
+
+/* ========== VIEWED PRODUCTS MEDIA ========== */
+@include media-breakpoint-down(md) {
+  .viewed-products__slider {
+    padding: 0;
+  }
+}

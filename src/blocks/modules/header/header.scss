@@ -343,3 +343,60 @@
   width: 375px;
   height: 36px;
 }
+
+
+
+/* ========== HEADER MEDIA ========== */
+@include media-breakpoint-down(lg) {
+  .header__mid_btn {
+    display: none;
+  }
+  .header__bot_catalog {
+    display: none;
+  }
+}
+@include media-breakpoint-down(md) {
+  .header__mid_phone_link {
+    font-size: 20px;
+  }
+  .header__mid_info {
+    display: none;
+  }
+  .header__bot_navigation_list_item_link {
+    font-size: 14px;
+  }
+  .header__bot_search {
+    width: 200px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .header__mid_phone {
+    display: none;
+  }
+  .header__bot_navigation {
+    width: 100%;
+  }
+  .header__bot_navigation_list {
+    justify-content: space-between;
+  }
+  .header__bot_search {
+    display: none;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .header__top {
+    display: none;
+  }
+  .header__mid {
+    padding: 5px 0;
+  }
+  .header__mid_logo {
+    width: 150px;
+  }
+  .header__mid_basket {
+    display: none;
+  }
+  .header__bot {
+    display: none;
+  }
+}

@@ -1,4 +1,7 @@
 /* ========== HOME ========== */
+.home {
+  overflow: hidden;
+}
 
 @import "slider/slider";
 
@@ -8,7 +11,7 @@
 
 
 /* ========== HOME MEDIA ========== */
-@include media-breakpoint-down(lg) {}
-@include media-breakpoint-down(md) {}
-@include media-breakpoint-down(sm) {}
-@include media-breakpoint-down(xs) {}
+//@include media-breakpoint-down(lg) {}
+//@include media-breakpoint-down(md) {}
+//@include media-breakpoint-down(sm) {}
+//@include media-breakpoint-down(xs) {}
