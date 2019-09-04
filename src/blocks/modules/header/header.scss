@@ -172,7 +172,7 @@
   width: 265px;
   height: 100%;
   background-color: $blue;
-  z-index: 3000;
+  //z-index: 3000;
 }
 
 .header__bot_catalog_link {
@@ -198,16 +198,19 @@
 }
 
 .header__bot_catalog_list {
-  position: absolute;
-  left: 0;
-  top: 46px;
-  width: 100%;
-  margin-top: 10px;
+  position: relative;
+  //position: absolute;
+  //left: 0;
+  //top: 46px;
+  //width: 100%;
+  //margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 5px 5px rgba(224, 224, 224, 0.75);
   border-radius: 4px;
   border: 1px solid #e7e7e7;
   background-color: $white;
-  display: none;
+  z-index: 3000;
+  //display: none;
 }
 
 .header__bot_navigation_list {
