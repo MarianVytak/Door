@@ -4,11 +4,11 @@
 }
 
 .cooperation__slider {
-  margin: 0 -15px;
+  margin: -20px -15px;
 }
 
 .cooperation__slider_item {
-  padding: 40px 15px;
+  padding: 60px 15px;
 }
 
 .cooperation__slider_item_link {
@@ -36,10 +36,10 @@
 .cooperation__slider_item_title {
   position: absolute;
   left: 50%;
-  bottom: -30px;
+  top: 110%;
   transform: translateX(-50%);
   font-weight: 500;
   color: $main;
   text-decoration: underline;
-  white-space: nowrap;
+  text-align: center;
 }

@@ -1,0 +1,30 @@
+/* ========== CATALOG MANUFACTURERS ========== */
+.catalog-manufacturers {
+  .main {
+    margin-left: 30px;
+  }
+}
+
+.catalog-manufacturers_list {
+  margin-top: 50px;
+}
+
+.catalog-manufacturers_list_item {
+  margin-bottom: 90px;
+}
+
+
+
+/* ========== CATALOG MANUFACTURERS MEDIA ========== */
+@include media-breakpoint-down(lg) {
+  .catalog-manufacturers {
+    .main {
+      margin-left: 0;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .catalog-manufacturers_list {
+    margin-top: 30px;
+  }
+}
