@@ -1,0 +1,17 @@
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 0.5rem 0;
+  background-color: transparent;
+}
+
+.breadcrumb-item {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #8f8f8f;
+  a {
+    color: #8f8f8f;
+    &:hover {
+      color: $main;
+    }
+  }
+}
