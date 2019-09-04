@@ -3,6 +3,7 @@ import "%modules%/home/home";
 import "%modules%/sidebar/sidebar";
 import "%modules%/cooperation/cooperation";
 import "%modules%/viewed-products/viewed-products";
+import "%modules%/catalog-settings/catalog-settings";
 import "%modules%/footer/footer";
 
 import "./libs/range";

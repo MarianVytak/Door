@@ -5,16 +5,17 @@
   padding: 45px 0 30px;
 }
 
-.pagination {}
-
 .page-item {
+  margin-right: 10px;
   &:first-child {
+    margin-left: 0;
     .page-link {
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
     }
   }
   &:last-child {
+    margin-right: 0;
     .page-link {
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -34,7 +35,6 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
   padding: 0;
   border-radius: 50%;
   border: none;
@@ -57,5 +57,23 @@
     border-color: #0083d1;
     background-color: #0083d1;
     color: $white;
+  }
+}
+
+
+
+/* ========== PAGINATION MEDIA ========== */
+@media (max-width: 400px) {
+  .page-item {
+    margin-right: 5px;
+  }
+  .page-link {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .pagination-navigation {
+    width: auto;
+    padding: 0 10px;
   }
 }

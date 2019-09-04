@@ -143,6 +143,11 @@
   margin-top: 15px;
   .btn {
     width: 100%;
+    background-color: #2783b0;
+    color: $white;
+    &:hover {
+      background-color: #1b5884;
+    }
   }
   i {
     margin-right: 8px;
