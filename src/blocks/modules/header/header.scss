@@ -209,6 +209,7 @@
   position: relative;
   font-weight: bold;
   color: $white;
+  white-space: nowrap;
 
   &:before {
     content: '';
@@ -232,8 +233,10 @@
 }
 
 .header__bot_search {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   height: 36px;
+  margin-left: 25px;
 }
 
 
@@ -256,9 +259,6 @@
   }
   .header__bot_navigation_list_item_link {
     font-size: 14px;
-  }
-  .header__bot_search {
-    width: 200px;
   }
 }
 @include media-breakpoint-down(sm) {
