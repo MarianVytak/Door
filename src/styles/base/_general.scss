@@ -14,9 +14,10 @@ ul {
 }
 
 a {
+  color: $main;
   transition: .3s;
-
   &:hover {
+    color: $blue;
     text-decoration: none;
   }
 }
@@ -55,10 +56,4 @@ img {
 
 .read-more-content {
   display: none;
-}
-
-@include media-breakpoint-up(xl) {
-  .container {
-    max-width: 1230px;
-  }
 }

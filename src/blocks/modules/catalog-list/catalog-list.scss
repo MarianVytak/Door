@@ -60,6 +60,9 @@
 .catalog__list_item_img {
   position: relative;
   margin: 10px 0 5px;
+  img {
+    display: inline-block;
+  }
 }
 
 .catalog__list_item_img_action {
