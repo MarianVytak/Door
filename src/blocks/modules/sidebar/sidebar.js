@@ -3,6 +3,12 @@ import '../../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomSc
 
 'use strict';
 
+// Show/hide Sidebar
+$('.sidebar-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.sidebar').slideToggle();
+});
+
 // Toggle class 'active' for Sidebar Colors icon.
 $('.sidebar__colors .custom-control').on('click', function (e) {
     e.preventDefault();

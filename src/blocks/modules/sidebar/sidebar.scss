@@ -1,4 +1,8 @@
-.sidebar {}
+/* ========== SIDEBAR ========== */
+.sidebar-btn {
+  display: none;
+  text-transform: uppercase;
+}
 
 .sidebar__item {
   margin-bottom: 10px;
@@ -48,6 +52,27 @@
     padding: 1rem;
   }
 }
+
+
+
+/* ========== SIDEBAR MEDIA ========== */
+@include media-breakpoint-up(xl) {
+  .sidebar {
+    display: block !important;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .sidebar-btn {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+    margin-top: 10px;
+  }
+}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(xs) {}
 
 @import "sidebar-check-list";
 @import "sidebar-colors";
