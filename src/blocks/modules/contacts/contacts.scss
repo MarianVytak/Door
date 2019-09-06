@@ -1,0 +1,16 @@
+/* ========== CONTACTS ========== */
+.contacts {
+  padding: 10px 0 50px;
+  background-color: $white;
+  .h1 {
+    text-transform: inherit;
+  }
+}
+
+.contacts__list {
+  font-size: 18px;
+}
+
+.contacts__list_item {
+  margin-bottom: 20px;
+}
