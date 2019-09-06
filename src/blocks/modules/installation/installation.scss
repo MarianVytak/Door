@@ -1,0 +1,43 @@
+/* ========== INSTALLATION ========== */
+.installation {
+  padding: 10px 0 85px;
+  background-color: $white;
+  .h1 {
+    text-transform: inherit;
+  }
+  .form {
+    max-width: 415px;
+    margin: 50px auto;
+  }
+  .table {
+    font-weight: 500;
+    tr {
+      td {
+        &:nth-child(1) {
+          padding-left: 4em;
+        }
+        &:nth-child(2) {
+          text-align: center;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+/* ========== INSTALLATION MEDIA ========== */
+@include media-breakpoint-down(sm) {
+  .installation {
+    padding-bottom: 50px;
+    .table {
+      font-weight: 500;
+      tr {
+        td {
+          &:nth-child(1) {
+            padding-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
