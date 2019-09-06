@@ -2,6 +2,9 @@
 .sidebar-btn {
   display: none;
   text-transform: uppercase;
+  img {
+    margin-right: 15px;
+  }
 }
 
 .sidebar__item {
@@ -63,7 +66,9 @@
 }
 @include media-breakpoint-down(lg) {
   .sidebar-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sidebar {
     display: none;
