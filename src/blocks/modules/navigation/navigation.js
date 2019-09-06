@@ -2,7 +2,7 @@ import $ from  'jquery';
 
 'use strict';
 
-const catalogContentLink = $('.navigation__list_item_link');
+const catalogContentLink = $('.js-navigation-link');
 const catalogContentList = $('.navigation__list_item_content');
 
 // Відкрити/закрити боковий список у Каталозі Товарів
