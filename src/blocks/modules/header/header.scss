@@ -255,31 +255,79 @@
   }
 }
 @include media-breakpoint-down(md) {
-  .header__mid_phone {
-    display: none;
+  .header__mid_block {
+    flex-wrap: wrap;
   }
   .header__mid_btn {
     margin-right: 15px;
   }
   .header__mid_info {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .header__mid_info_work {
+    margin-right: 15px;
   }
   .header__bot_navigation_list_item_link {
     font-size: 14px;
   }
 }
 @include media-breakpoint-down(sm) {
+  .header__mid_logo {
+    order: 1;
+    width: 150px;
+  }
+  .hamburger {
+    order: 2;
+  }
+  .header__mid_phone {
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    li {
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .header__mid_btn {
+    order: 5;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .btn {
+      width: 100%;
+    }
+  }
+  .header__mid_info {
+    order: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .header__mid_info_work {
+    display: none;
+  }
+  .header__mid_basket {
+    order: 6;
+    width: 100%;
+  }
+  .header__mid_basket_link {
+    width: 100%;
+  }
   .header__bot_block {
     flex-wrap: wrap;
     height: auto;
     padding: 10px 0;
   }
   .header__bot_navigation {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .header__bot_navigation_list {
-    justify-content: space-between;
+    display: none;
   }
   .header__bot_search {
     max-width: 100%;
@@ -293,34 +341,12 @@
   .header__mid {
     padding: 5px 0;
   }
-  .header__mid_block {
+  .header__mid_phone {
     flex-wrap: wrap;
-  }
-  .header__mid_logo {
-    order: 1;
-    width: 150px;
-  }
-  .hamburger {
-    order: 2;
-  }
-  .header__mid_btn {
-    order: 3;
-    width: 100%;
-    margin-right: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    .btn {
+    li {
       width: 100%;
+      margin-right: 0;
+      text-align: center;
     }
-  }
-  .header__mid_basket {
-    order: 4;
-    width: 100%;
-  }
-  .header__mid_basket_link {
-    width: 100%;
-  }
-  .header__bot_navigation {
-    display: none;
   }
 }

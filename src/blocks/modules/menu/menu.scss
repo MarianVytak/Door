@@ -12,6 +12,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  .link {
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .menu__search {
@@ -22,7 +27,7 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .menu {
     display: none !important;
   }
