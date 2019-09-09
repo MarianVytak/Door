@@ -22,6 +22,18 @@
   }
 }
 
+.navigation__list_item_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+
 .navigation__list_item_link {
   display: flex;
   align-items: center;
