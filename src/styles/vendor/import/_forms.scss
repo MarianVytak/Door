@@ -182,3 +182,15 @@ input {
   font-size: 15px;
   color: #232323;
 }
+
+textarea {
+  width: 100%;
+  height: 188px;
+  padding: 0.3em 1em 1em;
+  border: 1px solid #dfdfdf;
+  background-color: $white;
+  font-weight: 300;
+  font-size: 15px;
+  color: #232323;
+  resize: none;
+}

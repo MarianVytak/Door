@@ -5,6 +5,16 @@
     text-transform: inherit;
   }
 }
+.basket__form {
+  margin-top: 20px;
+}
+
+.basket__form_example {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #232323;
+}
 
 /* ========== BASKET MEDIA ========== */
 @include media-breakpoint-down(sm) {
