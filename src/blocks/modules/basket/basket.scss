@@ -1,0 +1,16 @@
+/* ========== BASKET ========== */
+.basket {
+  padding: 10px 0 85px;
+  .h1 {
+    text-transform: inherit;
+  }
+}
+
+/* ========== BASKET MEDIA ========== */
+@include media-breakpoint-down(sm) {
+  .basket {
+    padding-bottom: 50px;
+  }
+}
+
+@import "basket-list/basket-list";
