@@ -16,6 +16,45 @@
   color: #232323;
 }
 
+.payment__site_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.payment__site_list_item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  input:checked ~ label {
+    border-color: $blue;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 55px;
+    margin-bottom: 0;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    background-color: $white;
+    cursor: pointer;
+  }
+}
+
+.payment__site_list_item_icon {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.payment__site_list_item_name {
+  font-weight: 500;
+  font-size: 12px;
+  color: #15110c;
+  line-height: 1.2;
+}
+
 /* ========== BASKET MEDIA ========== */
 @include media-breakpoint-down(sm) {
   .basket {

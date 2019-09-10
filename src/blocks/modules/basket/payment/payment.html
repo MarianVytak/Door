@@ -1,0 +1,165 @@
+<form class="form basket__form">
+    <div class="form-title">Контакты</div>
+
+    <div class="form-group">
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="payment-1" name="payment" class="custom-control-input">
+            <label class="custom-control-label" for="payment-1">Оплата для юридических лиц</label>
+        </div>
+    </div>
+
+    <div class="row pl-4">
+        <div class="col-md-5">
+            <div class="form-group">
+                <input type="text" placeholder="Название компании" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Отчество" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Фамилия" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Адрес" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Город" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Страна" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Почтовый индекс" required>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-1">
+            <div class="form-group">
+                <input type="text" placeholder="Контактное лицо" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Контактный телефон" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="ИНН" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="КПП" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="БИК" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Банк для р/с" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Город банка для р/с" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Корреспондентский счет" required>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <input type="file" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="payment-2" name="payment" class="custom-control-input">
+            <label class="custom-control-label" for="payment-2">Оплата для физических лиц</label>
+        </div>
+    </div>
+
+    <div class="pl-4">
+
+        <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="payment-site" name="payment-type" class="custom-control-input">
+                <label class="custom-control-label" for="payment-site">Оплата на сайте</label>
+            </div>
+        </div>
+
+        <ul class="payment__site_list">
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-1" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-1">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-1.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">Банковской картой</span>
+                </label>
+            </li>
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-2" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-2">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-2.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">Qiwi Wallet</span>
+                </label>
+            </li>
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-3" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-3">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-3.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">Сбербанк Онлайн</span>
+                </label>
+            </li>
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-4" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-4">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-4.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">Pay Pal</span>
+                </label>
+            </li>
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-5" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-5">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-5.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">Яндекс Деньги</span>
+                </label>
+            </li>
+            <li class="payment__site_list_item">
+                <input type="radio" id="payment-site-6" name="payment-site-type" class="custom-control-input">
+                <label for="payment-site-6">
+                    <span class="payment__site_list_item_icon">
+                        <img src="../../../../img/icons/payment-6.png" alt="">
+                    </span>
+                    <span class="payment__site_list_item_name">WebMoney</span>
+                </label>
+            </li>
+        </ul>
+
+        <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="payment-upon" name="payment-type" class="custom-control-input">
+                <label class="custom-control-label" for="payment-upon">При получении</label>
+            </div>
+        </div>
+
+        <div class="pl-4">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="payment-cash" name="payment-type" class="custom-control-input">
+                <label class="custom-control-label" for="payment-cash">Оплата на сайте</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="payment-bank" name="payment-type" class="custom-control-input">
+                <label class="custom-control-label" for="payment-bank">При получении</label>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+<!-- /.form basket__form -->
