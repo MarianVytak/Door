@@ -196,6 +196,7 @@
 @include media-breakpoint-down(xs) {
   .basket__list_item {
     grid-template-columns: 40px 1fr 1fr 1fr 35px;
+    -ms-grid-columns: 40px 1fr 1fr 1fr 35px;
     grid-template-areas:
       'img name name name close'
       'img price count sum close';
@@ -206,27 +207,55 @@
   }
   .basket__list_item_img {
     grid-area: img;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     img {
       height: 60px;
     }
   }
   .basket__list_item_name {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-area: name;
     margin-bottom: 5px;
   }
   .basket__list_item_name_desc {
     display: none;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
   }
   .basket__list_item_price {
     grid-area: price;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
   }
   .basket__list_item_count {
     grid-area: count;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
   }
   .basket__list_item_sum {
     grid-area: sum;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
   }
   .basket__list_item_close {
     grid-area: close;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
   }
 }
