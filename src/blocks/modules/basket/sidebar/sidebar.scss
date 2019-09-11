@@ -1,0 +1,101 @@
+/* ========== BASKET SIDEBAR ========== */
+.basket__sidebar {
+  overflow-x: hidden;
+}
+
+.basket__sidebar_form {}
+
+.basket__sidebar_form_info {
+  padding: 15px 15px 0;
+  border: 1px solid $main;
+}
+
+.basket__sidebar_form_info_list_item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 5px 15px;
+  &.basket__sidebar_form_info_sale {
+    background-color: $blue;
+    color: $white;
+    .basket__sidebar_form_info_list_item_name {
+      background-color: $blue;
+      color: $white;
+    }
+    .basket__sidebar_form_info_list_item_line {
+      border-color: $white;
+    }
+    .basket__sidebar_form_info_list_item_price {
+      background-color: $blue;
+    }
+  }
+  &.basket__sidebar_form_info_sum {
+    padding: 10px 15px;
+    background-color: $main;
+    font-weight: bold;
+    font-size: 24px;
+    color: $white;
+    .basket__sidebar_form_info_list_item_line {
+      bottom: 20px;
+      border-color: $white;
+    }
+    .basket__sidebar_form_info_list_item_name {
+      background-color: $main;
+      font-size: 24px;
+      color: $white;
+    }
+    .basket__sidebar_form_info_list_item_price {
+      background-color: $main;
+      font-size: 24px;
+    }
+  }
+}
+
+.basket__sidebar_form_info_list_item_name {
+  padding-right: 5px;
+  background-color: #f8f8f8;
+  font-size: 18px;
+  color: #232323;
+  z-index: 1;
+}
+
+.basket__sidebar_form_info_list_item_line {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  border-bottom: 2px dotted #232323;
+}
+
+.basket__sidebar_form_info_list_item_price {
+  padding-left: 5px;
+  background-color: #f8f8f8;
+  font-weight: 500;
+  font-size: 18px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* ========== BASKET SIDEBAR MEDIA ========== */
+@include media-breakpoint-down(sm) {
+  .basket__sidebar_form_info_list_item {
+    &.basket__sidebar_form_info_sum {
+      .basket__sidebar_form_info_list_item_name {
+        font-size: 18px;
+      }
+      .basket__sidebar_form_info_list_item_price {
+        font-size: 18px;
+      }
+    }
+  }
+  .basket__sidebar_form_info_list_item_name {
+    font-size: 14px;
+  }
+  .basket__sidebar_form_info_list_item_price {
+    font-size: 14px;
+  }
+}
