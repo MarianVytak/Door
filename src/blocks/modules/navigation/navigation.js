@@ -10,15 +10,15 @@ catalogContentLink.on('click', function (e) {
     e.preventDefault();
     let catalogContentListThis = $(this).attr('data-target');
 
-    if (!$(this).hasClass('active')) {
-        catalogContentLink.removeClass('active');
-    }
+    // if (!$(this).hasClass('active')) {
+    //     catalogContentLink.removeClass('active');
+    // }
     $(this).toggleClass('active');
 
-    if (!$(catalogContentListThis).hasClass('active')) {
-        catalogContentList.slideUp();
-        catalogContentList.removeClass('active');
-    }
+    // if (!$(catalogContentListThis).hasClass('active')) {
+    //     catalogContentList.slideUp();
+    //     catalogContentList.removeClass('active');
+    // }
     $(catalogContentListThis).slideToggle();
     $(catalogContentListThis).toggleClass('active');
 });

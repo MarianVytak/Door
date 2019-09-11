@@ -62,6 +62,15 @@
   padding: 15px 20px;
   background-color: $white;
   display: none;
+  .navigation__list_item_content {
+    .navigation__list_item_content_list_item_link {
+      font-size: 14px;
+    }
+  }
+}
+
+.navigation__list_item_content_list_item {
+  position: relative;
 }
 
 .navigation__list_item_content_list_item_link {
