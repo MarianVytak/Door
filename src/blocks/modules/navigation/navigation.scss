@@ -86,3 +86,25 @@
     color: $white;
   }
 }
+
+.navigation__color_list_item {
+  margin-bottom: 5px;
+}
+
+.navigation__color_list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:hover {
+    .sidebar__colors_icon {
+      border: 2px solid $blue;
+    }
+    .navigation__color_list_item_link_label {
+      color: $blue;
+    }
+  }
+}
+
+.navigation__color_list_item_link_label {
+  color: $black;
+}
