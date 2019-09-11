@@ -1,0 +1,32 @@
+.basket__form_calculation {
+  padding: 25px;
+  border: 1px solid #f7dec8;
+  background-color: #fbf0e5;
+}
+
+.basket__form_calculation_subtitle {
+  display: block;
+  max-width: 450px;
+  padding: 5px 15px;
+  background-color: #f7dec8;
+}
+
+/* ========== CALCULATION MEDIA ========== */
+@include media-breakpoint-down(xs) {
+  .basket__form_calculation {
+    padding: 10px;
+    font-size: 14px;
+    .text-main {
+      font-size: 14px;
+    }
+    .custom-control-label {
+      font-size: 14px;
+    }
+    .custom-radio .custom-control-label:before {
+      top: 0.15rem;
+    }
+    .form-title {
+      font-size: 22px;
+    }
+  }
+}

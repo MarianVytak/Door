@@ -4,6 +4,9 @@
   .h1 {
     text-transform: inherit;
   }
+  .form-title {
+    margin-bottom: 15px;
+  }
 }
 .basket__form {
   margin-top: 20px;
@@ -21,6 +24,10 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  input {
+    width: 0;
+    height: 0;
+  }
 }
 
 .payment__site_list_item {
@@ -63,3 +70,4 @@
 }
 
 @import "basket-list/basket-list";
+@import "calculation/calculation";
