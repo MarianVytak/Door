@@ -1,0 +1,83 @@
+/* ========== COMMODITY ========== */
+.commodity {
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  background-color: $white;
+}
+
+.commodity__slider {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+}
+
+.commodity__slider_item {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.commodity__warning {
+  margin: 30px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.commodity__slider_small {
+  padding: 0 15px;
+  .slick-arrow {
+    width: 10px;
+    height: 30px;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    &:before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='30' viewBox='0 0 10 30'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23e5e5e5' d='M9.144 0l.85 1.39v.053l-8.277 13.53.007.053 8.27 13.54-.006.043L9.151 30h-.007c-.031-.149-.463-.787-.558-.923-.499-.712-.908-1.592-1.409-2.303L2.16 18.55c-.565-.82-1.048-1.787-1.604-2.621-.086-.13-.547-.814-.558-.955l6.576-10.76c.284-.404.532-.874.799-1.306.35-.566.712-1.116 1.045-1.709.178-.315.385-.588.558-.912.05-.092.143-.162.17-.287z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .slick-next {
+    right: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='30' viewBox='0 0 10 30'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23e5e5e5' d='M.855 0l-.85 1.39v.053l8.277 13.53-.006.053-8.271 13.54.006.043L.85 30h.006c.031-.149.464-.787.558-.923.499-.712.909-1.592 1.41-2.303L7.84 18.55c.564-.82 1.047-1.787 1.603-2.621.087-.13.547-.814.559-.955L3.426 4.213c-.283-.404-.532-.874-.798-1.306-.35-.566-.712-1.116-1.046-1.709C1.404.883 1.198.61 1.024.286.974.194.88.124.855-.001z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .slick-current {
+    .commodity__slider_small_item_box {
+      border-color: $blue;
+    }
+  }
+}
+
+.commodity__slider_small_item {
+  padding: 0 15px;
+}
+
+.commodity__slider_small_item_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+}
+
+.commodity__advertising {
+  display: block;
+  margin: 30px 0;
+}
+
+.commodity__networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .h5 {
+    margin-bottom: 0;
+  }
+}
+
+.commodity__title {
+  font-size: 26px;
+}
