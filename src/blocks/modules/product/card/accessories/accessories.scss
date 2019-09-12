@@ -1,0 +1,36 @@
+/* ========== ACCESSORIES ========== */
+.accessories {
+  width: 115px;
+  padding: 0 5px;
+}
+
+.accessories__item {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accessories__item_link {
+  &:hover {
+    .accessories__item_link_title {
+      color: $blue;
+    }
+  }
+}
+
+.accessories__item_link_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accessories__item_link_title {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main;
+  text-align: center;
+  text-decoration: underline;
+  transition: .3s;
+}
