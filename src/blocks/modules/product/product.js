@@ -1,6 +1,7 @@
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 import 'slick-carousel';
+import '../../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min';
 
 'use strict';
 
@@ -20,3 +21,12 @@ $('.commodity__slider_small').slick({
     centerPadding: 0,
     focusOnSelect: true
 });
+
+// Custom Scrollbar
+(function($){
+    $(window).on("load",function(){
+        $(".custom-scrollbar").mCustomScrollbar({
+            theme:"dark-3"
+        });
+    });
+})(jQuery);
