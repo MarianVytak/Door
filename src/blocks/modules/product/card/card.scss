@@ -315,4 +315,48 @@
   text-align: right;
 }
 
+/* ========== COMMODITY MEDIA ========== */
+@include media-breakpoint-down(md) {
+  .commodity__advertising {
+    display: none;
+  }
+  .commodity__networks {
+    display: none;
+  }
+  .commodity__title {
+    margin-top: 30px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .commodity__info_stock {
+    margin-right: 30px;
+  }
+  .commodity__info_article {
+    margin-right: 30px;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .commodity__buttons {
+    flex-wrap: wrap;
+  }
+  .commodity__btn_basket {
+    margin-top: 10px;
+  }
+  .commodity__btn_click {
+    margin-top: 10px;
+  }
+  .commodity__info {
+    flex-wrap: wrap;
+  }
+  .commodity__info_article {
+    width: 100%;
+  }
+  .commodity__info_check {
+    margin-top: 5px;
+  }
+  .commodity__add {
+    display: none;
+  }
+}
+
 @import "accessories/accessories";
