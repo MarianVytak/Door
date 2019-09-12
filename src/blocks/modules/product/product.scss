@@ -1,12 +1,9 @@
 /* ========== PRODUCT ========== */
 .product {
-  padding: 10px 0 85px;
-}
-
-/* ========== COMMODITY MEDIA ========== */
-@include media-breakpoint-down(sm) {
-  .product {
-    padding-bottom: 50px;
+  padding-top: 10px;
+  .tab-content {
+    padding: 30px 15px 15px;
+    background-color: $white;
   }
 }
 
