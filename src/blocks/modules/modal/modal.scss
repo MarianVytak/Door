@@ -1,6 +1,10 @@
 .modal {
   z-index: 8000;
-  &.modal-card {}
+  &.modal-card {
+    .commodity__slider_small {
+      margin-top: 20px;
+    }
+  }
 }
 
 .modal-content {

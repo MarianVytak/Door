@@ -15,10 +15,6 @@
   -ms-grid-columns: minmax(0,1fr) minmax(0,130px);
 }
 
-.commodity__grid_left {
-  padding-right: 15px;
-}
-
 .commodity__grid_right {
   -ms-grid-column: 2;
   padding-left: 15px;
@@ -192,6 +188,7 @@
   margin-right: 60px;
   font-weight: 300;
   font-size: 14px;
+  white-space: nowrap;
   i {
     margin-right: 8px;
     font-size: 20px;
@@ -210,6 +207,9 @@
   }
   label {
     margin-bottom: 0;
+    .custom-control-label {
+      white-space: nowrap;
+    }
   }
 }
 
@@ -350,10 +350,6 @@
   .commodity__grid {
     grid-template-columns: minmax(0,1fr);
     -ms-grid-columns: minmax(0,1fr);
-  }
-
-  .commodity__grid_left {
-    padding-right: 0;
   }
 
   .commodity__grid_right {

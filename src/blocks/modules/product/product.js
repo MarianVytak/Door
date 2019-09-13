@@ -28,6 +28,7 @@ $('.commodity__doors').slick({
     slidesToScroll: 8,
     arrows: true,
     fade: false,
+    //infinite: false
 });
 
 // Custom Scrollbar
