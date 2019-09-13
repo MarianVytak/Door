@@ -9,6 +9,14 @@
       padding-right: 5px;
     }
   }
+  li {
+    position: relative;
+    &:hover {
+      .catalog__list_item_watch {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .catalog__list_item {
@@ -24,9 +32,6 @@
   &:hover {
     box-shadow: 0 5px 21px rgba(179, 178, 179, 0.75);
     color: $black;
-    .catalog__list_item_watch {
-      opacity: 1;
-    }
     .catalog__list_item_info {
       z-index: 1;
       opacity: 1;
@@ -42,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: calc(100% - 10px);
   height: 37px;
   border: none;
   background-color: rgba($main,.72);

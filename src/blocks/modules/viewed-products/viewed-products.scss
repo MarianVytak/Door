@@ -17,7 +17,13 @@
 }
 
 .viewed-products__slider_item {
+  position: relative;
   padding: 0 5px;
+  &:hover {
+    .catalog__list_item_watch {
+      opacity: 1;
+    }
+  }
   .catalog__list_item {
     &:hover {
       box-shadow: 0 5px 10px rgba(179, 178, 179, 0.75);
