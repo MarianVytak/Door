@@ -22,6 +22,14 @@ $('.commodity__slider_small').slick({
     focusOnSelect: true
 });
 
+$('.commodity__doors').slick({
+    rows: 3,
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    arrows: true,
+    fade: false,
+});
+
 // Custom Scrollbar
 (function($){
     $(window).on("load",function(){
