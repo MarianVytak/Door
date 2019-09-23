@@ -378,6 +378,7 @@
 @include media-breakpoint-down(xs) {
   .commodity__buttons {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .commodity__btn_basket {
     margin-top: 10px;

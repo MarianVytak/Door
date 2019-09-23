@@ -25,6 +25,7 @@
 }
 
 .modal-backdrop {
+  z-index: 3000;
   &.show {
     opacity: .7;
   }

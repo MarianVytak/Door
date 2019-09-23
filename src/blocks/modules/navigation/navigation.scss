@@ -32,6 +32,14 @@
   width: 33px;
   height: 33px;
   cursor: pointer;
+  &.active {
+    i {
+      transform: rotate(90deg);
+    }
+  }
+  i {
+    transition: .3s;
+  }
 }
 
 .navigation__list_item_link {
@@ -51,10 +59,14 @@
     background-color: $orange;
     font-weight: 500;
     color: $white;
+    i {
+      transform: rotate(90deg);
+    }
   }
 
   i {
     margin-left: 15px;
+    transition: .3s;
   }
 }
 

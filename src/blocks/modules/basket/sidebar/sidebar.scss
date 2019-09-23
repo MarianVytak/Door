@@ -81,6 +81,12 @@
 }
 
 /* ========== BASKET SIDEBAR MEDIA ========== */
+@include media-breakpoint-down(lg) {
+  .basket__sidebar {
+    margin-top: 2em;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .basket__sidebar_form_info_list_item {
     &.basket__sidebar_form_info_sum {

@@ -63,9 +63,9 @@
 }
 
 /* ========== BASKET MEDIA ========== */
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(lg) {
   .basket {
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 }
 

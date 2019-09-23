@@ -10,16 +10,18 @@ $('.commodity__slider').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.commodity__slider_small'
+    asNavFor: '.commodity__slider_small',
+    infinite: false
 });
 $('.commodity__slider_small').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.commodity__slider',
     dots: false,
-    centerMode: true,
+    centerMode: false,
     centerPadding: 0,
-    focusOnSelect: true
+    focusOnSelect: true,
+    infinite: false
 });
 
 $('.commodity__doors').slick({
