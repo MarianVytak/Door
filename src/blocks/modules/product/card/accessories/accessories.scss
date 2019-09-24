@@ -34,3 +34,35 @@
   text-decoration: underline;
   transition: .3s;
 }
+
+@include media-breakpoint-down(lg) {
+  .accessories {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+  }
+  .accessories__item {
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  .accessories__item_link_img {
+    height: 75px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .accessories {
+    flex-wrap: wrap;
+  }
+  .accessories__item {
+    width: 33%;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .accessories__item {
+    width: 50%;
+  }
+}
