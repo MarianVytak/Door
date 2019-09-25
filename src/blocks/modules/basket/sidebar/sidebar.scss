@@ -10,6 +10,14 @@
   border: 1px solid $main;
 }
 
+.basket__sidebar_coupon {
+  display: none;
+  margin-top: 1em;
+  label {
+    width: 100%;
+  }
+}
+
 .basket__sidebar_form_info_list_item {
   position: relative;
   display: flex;
