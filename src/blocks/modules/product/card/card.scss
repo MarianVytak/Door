@@ -139,13 +139,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 250px;
   height: 48px;
   margin-right: 15px;
   padding: 0 25px;
   box-shadow: 0 0 9px 1px rgba(179, 178, 179, 0.75);
   border-radius: 15px;
   border: 2px solid $white;
-  font-size: 18px;
+  font-size: 16px;
   color: $white;
   line-height: 1;
   transition: .3s;
@@ -209,6 +210,12 @@
     margin-bottom: 0;
     .custom-control-label {
       white-space: nowrap;
+      &:before {
+        top: 0.1rem;
+      }
+      &:after {
+        top: 0.1rem;
+      }
     }
   }
 }
@@ -304,6 +311,9 @@
     &:last-child {
       border-bottom: 2px dotted #dfdfdf;
     }
+    &.hide {
+      display: none;
+    }
   }
   .catalog__list_item_btn {
     position: absolute;
@@ -351,10 +361,12 @@
     grid-template-columns: minmax(0,1fr);
     -ms-grid-columns: minmax(0,1fr);
   }
-
   .commodity__grid_right {
     margin-top: 1em;
     padding-left: 0;
+  }
+  .commodity__btn {
+    width: 230px;
   }
 }
 @include media-breakpoint-down(md) {
@@ -367,6 +379,9 @@
   .commodity__title {
     margin-top: 30px;
   }
+  .commodity__btn {
+    width: 250px;
+  }
 }
 @include media-breakpoint-down(sm) {
   .commodity__info_stock {
@@ -375,6 +390,23 @@
   .commodity__info_article {
     margin-right: 30px;
   }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .commodity__buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .commodity__btn {
+    width: 250px;
+    margin: 10px auto 0;
+    &:last-child {
+      margin-right: auto;
+    }
+  }
 }
 @include media-breakpoint-down(xs) {
   .commodity__title {
@@ -382,16 +414,6 @@
   }
   .commodity__desc {
     text-align: center;
-  }
-  .commodity__buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .commodity__btn_basket {
-    margin-top: 10px;
-  }
-  .commodity__btn_click {
-    margin-top: 10px;
   }
   .commodity__info {
     flex-wrap: wrap;

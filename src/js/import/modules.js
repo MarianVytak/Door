@@ -10,4 +10,5 @@ import "%modules%/product/product";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 
+import "./libs/counter";
 import "./libs/range";

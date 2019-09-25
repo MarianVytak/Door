@@ -33,6 +33,21 @@ $('.commodity__doors').slick({
     //infinite: false
 });
 
+// Show/hide hidden content for Reviews List
+$('.commodity__add_link .link').on('click', function(e){
+    e.preventDefault();
+    const postId = $(this).attr('href');
+    const text = $(this).text();
+
+    if (text == 'Показать все') {
+        $(this).text('Скрыть');
+    } else {
+        $(this).text('Показать все');
+    }
+
+    $(postId).toggleClass('hide');
+});
+
 // Custom Scrollbar
 (function($){
     $(window).on("load",function(){
