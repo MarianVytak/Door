@@ -118,6 +118,25 @@
   margin-right: 8px;
 }
 
+.header__mid_basket {
+  position: relative;
+  &:hover {
+    .search__result {
+      display: block;
+    }
+  }
+  .search__result {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transform: translateY(100%);
+    display: none;
+    width: 375px;
+    z-index: 4000;
+  }
+}
+
 .header__mid_basket_link {
   display: flex;
   align-items: center;
