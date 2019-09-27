@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade modal-card" id="modal-card" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade modal-card" id="modal-card" tabindex="-1" role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -371,6 +371,45 @@
             </div>
             <!-- /.commodity -->
             <div class="modal-close" data-dismiss="modal"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-challenger" id="modal-challenger" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <form class="form">
+                <div class="modal-header">
+                    <h5 class="modal-title">Вызов замерщика</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Фамилия" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-mail (не обязательно)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Адрес доставки" required>
+                        <div class="basket__form_example">
+                            например: ул. Петровка, 2, 5-й этаж, Москва 107031, Россия
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Вызвать</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
