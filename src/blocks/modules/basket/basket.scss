@@ -62,6 +62,13 @@
   line-height: 1.2;
 }
 
+.basket__payment_content, .basket__payment_content_child {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 /* ========== BASKET MEDIA ========== */
 @include media-breakpoint-down(lg) {
   .basket {
