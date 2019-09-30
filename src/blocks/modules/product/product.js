@@ -30,7 +30,17 @@ $('.commodity__doors').slick({
     slidesToScroll: 8,
     arrows: true,
     fade: false,
-    //infinite: false
+});
+
+const commodityDoorsLink = $('.commodity__doors_item');
+const commodityDoorsContent = $('.commodity__slider_2 > .commodity__slider_item');
+commodityDoorsLink.on('click', function (e) {
+    e.preventDefault();
+    commodityDoorsLink.removeClass('active');
+    $(this).addClass('active');
+    let commodityDoorsContentThis = $(this).attr('data-target');
+    commodityDoorsContent.removeClass('active');
+    $(commodityDoorsContentThis).addClass('active');
 });
 
 // Show/hide hidden content for Reviews List
