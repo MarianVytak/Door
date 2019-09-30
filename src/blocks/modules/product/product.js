@@ -32,6 +32,14 @@ $('.commodity__doors').slick({
     fade: false,
 });
 
+$('.commodity__doors_mobile').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    infinite: false
+});
+
 const commodityDoorsLink = $('.commodity__doors_item');
 const commodityDoorsContent = $('.commodity__slider_2 > .commodity__slider_item');
 commodityDoorsLink.on('click', function (e) {
