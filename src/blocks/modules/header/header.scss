@@ -191,7 +191,14 @@
   width: 265px;
   height: 100%;
   background-color: $blue;
-  //z-index: 3000;
+  z-index: 3000;
+}
+
+.header__bot_navigation_menu {
+  display: none;
+  .navigation__list {
+    border-radius: 0;
+  }
 }
 
 .header__bot_catalog_link {
@@ -293,6 +300,9 @@
   }
 }
 @include media-breakpoint-down(sm) {
+  .header__top {
+    display: none;
+  }
   .header__mid_logo {
     order: 1;
     width: 150px;
@@ -331,9 +341,6 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  .header__mid_info_work {
-    //display: none;
-  }
   .header__mid_basket {
     order: 6;
     width: 100%;
@@ -355,9 +362,6 @@
   }
 }
 @include media-breakpoint-down(xs) {
-  .header__top {
-    display: none;
-  }
   .header__mid {
     padding: 5px 0;
   }
