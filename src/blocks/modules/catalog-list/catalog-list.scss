@@ -249,9 +249,6 @@
 @include media-breakpoint-down(sm) {
   .catalog__list {
     li {
-      .catalog__list_item_watch {
-        display: none;
-      }
       .catalog__list_item_info {
         position: inherit;
         top: 0;
@@ -265,5 +262,8 @@
         z-index: 1;
       }
     }
+  }
+  .catalog__list_item_watch {
+    display: none;
   }
 }
