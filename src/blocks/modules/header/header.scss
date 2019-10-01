@@ -290,8 +290,10 @@
   .header-2 {
     .header__bot_catalog {
       position: absolute;
-      top: 46px;
+      top: 56px;
       width: 100%;
+      height: 46px;
+      border-radius: 0.3rem;
       display: block;
     }
   }
@@ -313,11 +315,6 @@
   }
   .header__bot_navigation_list_item_link {
     font-size: 14px;
-  }
-  .header-2 {
-    .header__bot_catalog {
-      top: 56px;
-    }
   }
 }
 @include media-breakpoint-down(sm) {
@@ -380,6 +377,11 @@
   .header__bot_search {
     max-width: 100%;
     margin-left: 0;
+  }
+  .header-2 {
+    .header__bot_catalog {
+      top: 66px;
+    }
   }
 }
 @include media-breakpoint-down(xs) {

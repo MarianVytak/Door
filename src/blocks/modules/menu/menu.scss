@@ -1,6 +1,8 @@
 .menu {
+  position: relative;
   background-color: $white;
   display: none;
+  z-index: 4000;
 }
 
 .menu__list {
