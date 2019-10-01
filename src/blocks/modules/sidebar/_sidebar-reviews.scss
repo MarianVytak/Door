@@ -72,3 +72,9 @@
   font-weight: 500;
   font-size: 13px;
 }
+
+@include media-breakpoint-down(sm) {
+  .sidebar__reviews {
+    display: none;
+  }
+}

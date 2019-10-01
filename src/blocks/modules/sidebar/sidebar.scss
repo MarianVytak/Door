@@ -75,9 +75,11 @@
     margin-top: 10px;
   }
 }
-@include media-breakpoint-down(md) {}
-@include media-breakpoint-down(sm) {}
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(sm) {
+  .sidebar__item {
+    display: none;
+  }
+}
 
 @import "sidebar-check-list";
 @import "sidebar-colors";
