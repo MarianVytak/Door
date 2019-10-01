@@ -226,21 +226,17 @@
 }
 
 .commodity__info_check {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
-  }
-  label {
-    margin-bottom: 0;
-    .custom-control-label {
-      white-space: nowrap;
-      &:before {
-        top: 0.1rem;
-      }
-      &:after {
-        top: 0.1rem;
-      }
+  color: $black;
+  white-space: nowrap;
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+    i {
+      color: $black;
     }
+  }
+  i {
+    color: $black;
   }
 }
 
