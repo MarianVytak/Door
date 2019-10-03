@@ -135,6 +135,9 @@
     width: 375px;
     z-index: 4000;
   }
+  .counter {
+    padding: 0 15px 0 60px;
+  }
 }
 
 .header__mid_basket_link {
@@ -389,6 +392,9 @@
   .header__mid_basket {
     order: 6;
     width: 100%;
+    .search__result {
+      display: none !important;
+    }
   }
   .header__mid_basket_link {
     width: 100%;
