@@ -75,11 +75,6 @@
     margin-top: 10px;
   }
 }
-@include media-breakpoint-down(sm) {
-  .sidebar__item {
-    display: none;
-  }
-}
 
 @import "sidebar-check-list";
 @import "sidebar-colors";
