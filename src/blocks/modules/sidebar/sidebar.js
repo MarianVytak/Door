@@ -6,7 +6,7 @@ import '../../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomSc
 // Show/hide Sidebar
 $('.sidebar-btn').on('click', function (e) {
     e.preventDefault();
-    $('.sidebar').slideToggle();
+    $('.sidebar__mobile').slideToggle();
 });
 
 // Toggle class 'active' for Sidebar Colors icon.

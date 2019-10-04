@@ -7,737 +7,669 @@
 
     @@include("../navigation/navigation.html")
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapsePrices" role="button"
-           aria-expanded="false" aria-controls="collapsePrices">
-            Цена
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse show" id="collapsePrices">
-            <div class="card card-body">
-                <div class="sidebar__range">
-                    <div class="input-number">
-                        <div class="input-number__box">
-                            <label for="range-value-1">От</label>
-                            <input type="text" id="range-value-1" value="0" placeholder="От" min="0">
+    <div class="sidebar__mobile">
+
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapsePrices" role="button"
+               aria-expanded="false" aria-controls="collapsePrices">
+                Цена
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse show" id="collapsePrices">
+                <div class="card card-body">
+                    <div class="sidebar__range">
+                        <div class="input-number">
+                            <div class="input-number__box">
+                                <label for="range-value-1">От</label>
+                                <input type="text" id="range-value-1" value="0" placeholder="От" min="0">
+                            </div>
+                            <div class="input-number__box">
+                                <label for="range-value-2">До</label>
+                                <input type="text" id="range-value-2" value="0" placeholder="До" min="0">
+                            </div>
                         </div>
-                        <div class="input-number__box">
-                            <label for="range-value-2">До</label>
-                            <input type="text" id="range-value-2" value="0" placeholder="До" min="0">
-                        </div>
+                        <div class="range" id="range"></div>
                     </div>
-                    <div class="range" id="range"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapseColors" role="button"
-           aria-expanded="false" aria-controls="collapseColors">
-            Цвет
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse show" id="collapseColors">
-            <div class="card card-body">
-                <ul class="sidebar__check_list sidebar__colors">
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon white"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Белый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon yellow"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Желтый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon green"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Зеленый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon blue"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Синий</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon red"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Красный</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon gray"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Серый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon black"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Черный</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapseColors" role="button"
+               aria-expanded="false" aria-controls="collapseColors">
+                Цвет
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse show" id="collapseColors">
+                <div class="card card-body">
+                    <ul class="sidebar__check_list sidebar__colors">
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon white"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Белый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon yellow"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Желтый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon green"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Зеленый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon blue"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Синий</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon red"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Красный</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon gray"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Серый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon black"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Черный</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/bleached-oak.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Беленый дуб</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Беленый дуб</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/white-ash.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Белый ясень</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Белый ясень</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/venge.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Венге</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Венге</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/venge-melinga.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Венге мелинга</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon white"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Белый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon yellow"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Желтый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon green"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Зеленый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon blue"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Синий</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon red"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Красный</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon gray"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Серый</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <span class="sidebar__colors_icon black"></span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Черный</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Венге мелинга</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon white"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Белый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon yellow"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Желтый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon green"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Зеленый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon blue"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Синий</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon red"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Красный</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon gray"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Серый</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <span class="sidebar__colors_icon black"></span>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Черный</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/bleached-oak.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Беленый дуб</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Беленый дуб</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/white-ash.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Белый ясень</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Белый ясень</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/venge.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Венге</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Венге</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
                             <span class="sidebar__colors_icon">
                                 <img src="../../../img/icons/sidebar-colors/venge-melinga.png" alt="">
                             </span>
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Венге мелинга</span>
-                        </label>
-                    </li>
-                </ul>
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Венге мелинга</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapseSizes" role="button"
-           aria-expanded="false" aria-controls="collapseSizes">
-            Размеры
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse show" id="collapseSizes">
-            <div class="card card-body">
-                <ul class="sidebar__check_list sidebar__sizes">
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                </ul>
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue" data-toggle="collapse" href="#collapseSizes" role="button"
+               aria-expanded="false" aria-controls="collapseSizes">
+                Размеры
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse show" id="collapseSizes">
+                <div class="card card-body">
+                    <ul class="sidebar__check_list sidebar__sizes">
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseStyles"
-           role="button"
-           aria-expanded="false" aria-controls="collapseStyles">
-            Стиль
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse" id="collapseStyles">
-            <div class="card card-body">
-                <ul class="sidebar__check_list sidebar__styles">
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                </ul>
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseStyles"
+               role="button"
+               aria-expanded="false" aria-controls="collapseStyles">
+                Стиль
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse" id="collapseStyles">
+                <div class="card card-body">
+                    <ul class="sidebar__check_list sidebar__styles">
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseManufacturers"
-           role="button"
-           aria-expanded="false" aria-controls="collapseManufacturers">
-            Производители
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse" id="collapseManufacturers">
-            <div class="card card-body">
-                <ul class="sidebar__check_list sidebar__manufacturers">
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                </ul>
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseManufacturers"
+               role="button"
+               aria-expanded="false" aria-controls="collapseManufacturers">
+                Производители
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse" id="collapseManufacturers">
+                <div class="card card-body">
+                    <ul class="sidebar__check_list sidebar__manufacturers">
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__item">
-        <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseTypes"
-           role="button"
-           aria-expanded="false" aria-controls="collapseTypes">
-            Тип
-            <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
-        </a>
-        <div class="sidebar__content collapse" id="collapseTypes">
-            <div class="card card-body">
-                <ul class="sidebar__check_list sidebar__types">
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">Все</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                    <li class="sidebar__check_list_item">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-label">300х2000</span>
-                        </label>
-                    </li>
-                </ul>
+        <div class="sidebar__item">
+            <a class="sidebar__link btn btn-outline-blue collapsed" data-toggle="collapse" href="#collapseTypes"
+               role="button"
+               aria-expanded="false" aria-controls="collapseTypes">
+                Тип
+                <img class="sidebar__link_icon" src="../../../img/svg/arrow-up.svg" alt="">
+            </a>
+            <div class="sidebar__content collapse" id="collapseTypes">
+                <div class="card card-body">
+                    <ul class="sidebar__check_list sidebar__types">
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">Все</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                        <li class="sidebar__check_list_item">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-label">300х2000</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- /.sidebar__item -->
+        <!-- /.sidebar__item -->
 
-    <div class="sidebar__reviews">
-        <div class="sidebar__reviews_title title-line">Отзывы покупателей</div>
-        <div class="sidebar__reviews_list">
-            <div class="sidebar__reviews_list_card">
-                <div class="sidebar__reviews_list_card_header">
-                    <div class="box">
-                        <div class="sidebar__reviews_list_card_header_title">Елена</div>
-                        <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
-                    </div>
-                    <div class="rating">
-                        <img src="../../../img/svg/rating.svg" alt="">
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_body">
-                    <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
-                    <div class="sidebar__reviews_list_card_body_text">
-                        Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        <span class="read-more-content" id="sidebar-reviews-1">
-                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        </span>
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_footer">
-                    <a href="#sidebar-reviews-1" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
-                </div>
-            </div>
-            <div class="sidebar__reviews_list_card">
-                <div class="sidebar__reviews_list_card_header">
-                    <div class="box">
-                        <div class="sidebar__reviews_list_card_header_title">Елена</div>
-                        <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
-                    </div>
-                    <div class="rating">
-                        <img src="../../../img/svg/rating.svg" alt="">
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_body">
-                    <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
-                    <div class="sidebar__reviews_list_card_body_text">
-                        Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        <span class="read-more-content" id="sidebar-reviews-2">
-                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        </span>
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_footer">
-                    <a href="#sidebar-reviews-2" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
-                </div>
-            </div>
-            <div class="sidebar__reviews_list_card">
-                <div class="sidebar__reviews_list_card_header">
-                    <div class="box">
-                        <div class="sidebar__reviews_list_card_header_title">Елена</div>
-                        <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
-                    </div>
-                    <div class="rating">
-                        <img src="../../../img/svg/rating.svg" alt="">
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_body">
-                    <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
-                    <div class="sidebar__reviews_list_card_body_text">
-                        Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        <span class="read-more-content" id="sidebar-reviews-3">
-                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                        </span>
-                    </div>
-                </div>
-                <div class="sidebar__reviews_list_card_footer">
-                    <a href="#sidebar-reviews-3" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
-                </div>
-            </div>
-            <div class="read-more-content" id="sidebar-reviews-list-hide">
+        <div class="sidebar__reviews">
+            <div class="sidebar__reviews_title title-line">Отзывы покупателей</div>
+            <div class="sidebar__reviews_list">
                 <div class="sidebar__reviews_list_card">
                     <div class="sidebar__reviews_list_card_header">
                         <div class="box">
@@ -752,22 +684,94 @@
                         <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
                         <div class="sidebar__reviews_list_card_body_text">
                             Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
-                            <span class="read-more-content" id="sidebar-reviews-4">
+                            <span class="read-more-content" id="sidebar-reviews-1">
                             Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
                         </span>
                         </div>
                     </div>
                     <div class="sidebar__reviews_list_card_footer">
-                        <a href="#sidebar-reviews-4" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
+                        <a href="#sidebar-reviews-1" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="sidebar__reviews_list_card">
+                    <div class="sidebar__reviews_list_card_header">
+                        <div class="box">
+                            <div class="sidebar__reviews_list_card_header_title">Елена</div>
+                            <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
+                        </div>
+                        <div class="rating">
+                            <img src="../../../img/svg/rating.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sidebar__reviews_list_card_body">
+                        <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
+                        <div class="sidebar__reviews_list_card_body_text">
+                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                            <span class="read-more-content" id="sidebar-reviews-2">
+                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                        </span>
+                        </div>
+                    </div>
+                    <div class="sidebar__reviews_list_card_footer">
+                        <a href="#sidebar-reviews-2" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="sidebar__reviews_list_card">
+                    <div class="sidebar__reviews_list_card_header">
+                        <div class="box">
+                            <div class="sidebar__reviews_list_card_header_title">Елена</div>
+                            <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
+                        </div>
+                        <div class="rating">
+                            <img src="../../../img/svg/rating.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sidebar__reviews_list_card_body">
+                        <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
+                        <div class="sidebar__reviews_list_card_body_text">
+                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                            <span class="read-more-content" id="sidebar-reviews-3">
+                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                        </span>
+                        </div>
+                    </div>
+                    <div class="sidebar__reviews_list_card_footer">
+                        <a href="#sidebar-reviews-3" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="read-more-content" id="sidebar-reviews-list-hide">
+                    <div class="sidebar__reviews_list_card">
+                        <div class="sidebar__reviews_list_card_header">
+                            <div class="box">
+                                <div class="sidebar__reviews_list_card_header_title">Елена</div>
+                                <div class="sidebar__reviews_list_card_header_date">01-05-2019</div>
+                            </div>
+                            <div class="rating">
+                                <img src="../../../img/svg/rating.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews_list_card_body">
+                            <div class="sidebar__reviews_list_card_body_title">О покупке Белорусских дверей</div>
+                            <div class="sidebar__reviews_list_card_body_text">
+                                Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                                <span class="read-more-content" id="sidebar-reviews-4">
+                            Сами двери соответствуют своей ценовой категории. Доставка выполнена вовремя.
+                        </span>
+                            </div>
+                        </div>
+                        <div class="sidebar__reviews_list_card_footer">
+                            <a href="#sidebar-reviews-4" class="sidebar__reviews_list_card_footer_link js-read-more link">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="sidebar__reviews_watch-all">
+                <a href="#sidebar-reviews-list-hide" class="sidebar__reviews_watch-all_link link">Показать все</a>
+            </div>
         </div>
-        <div class="sidebar__reviews_watch-all">
-            <a href="#sidebar-reviews-list-hide" class="sidebar__reviews_watch-all_link link">Показать все</a>
-        </div>
+        <!-- /.sidebar__reviews -->
+
     </div>
-    <!-- /.sidebar__reviews -->
 
 </div>
 <!-- /.sidebar -->

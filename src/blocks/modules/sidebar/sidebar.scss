@@ -60,7 +60,7 @@
 
 /* ========== SIDEBAR MEDIA ========== */
 @include media-breakpoint-up(xl) {
-  .sidebar {
+  .sidebar__mobile {
     display: block !important;
   }
 }
@@ -70,7 +70,10 @@
     align-items: center;
     justify-content: center;
   }
-  .sidebar {
+  .navigation {
+    margin-top: 10px;
+  }
+  .sidebar__mobile {
     display: none;
     margin-top: 10px;
   }
