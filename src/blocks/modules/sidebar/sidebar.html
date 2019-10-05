@@ -1,11 +1,18 @@
-<button type="button" class="sidebar-btn btn btn-blue btn-lg btn-block text-white">
-    <img src="../../../img/svg/catalog-hamburger.svg" alt="">
-    Каталог товаров
-</button>
-
 <div class="sidebar">
 
-    @@include("../navigation/navigation.html")
+    <button type="button" class="catalog-btn btn btn-blue btn-lg btn-block text-white">
+        <img src="../../../img/svg/catalog-hamburger.svg" alt="">
+        Каталог товаров
+    </button>
+
+    <div class="catalog-menu">
+        @@include("../navigation/navigation.html")
+    </div>
+
+    <button type="button" class="sidebar-btn btn btn-blue btn-lg btn-block text-white">
+        <img src="../../../img/svg/catalog-hamburger.svg" alt="">
+        Фильтр товаров
+    </button>
 
     <div class="sidebar__mobile">
 

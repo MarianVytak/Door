@@ -198,6 +198,12 @@
   font-weight: bold;
 }
 
+.header__basket_desc {
+  display: block;
+  font-size: 12px;
+  color: $black;
+}
+
 .header__basket_sum {
   padding: 15px;
   span {
@@ -218,6 +224,11 @@
       color: $black;
     }
   }
+}
+
+.search__result_block {
+  height: 520px;
+  overflow-y: auto;
 }
 
 // HEADER BOT

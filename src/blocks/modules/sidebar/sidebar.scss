@@ -1,6 +1,7 @@
 /* ========== SIDEBAR ========== */
 .sidebar-btn {
   display: none;
+  margin-top: 20px;
   text-transform: uppercase;
   img {
     margin-right: 15px;
@@ -56,11 +57,19 @@
   }
 }
 
+.catalog-btn {
+  display: none;
+  text-transform: uppercase;
+}
+
 
 
 /* ========== SIDEBAR MEDIA ========== */
 @include media-breakpoint-up(xl) {
   .sidebar__mobile {
+    display: block !important;
+  }
+  .catalog-menu {
     display: block !important;
   }
 }
@@ -70,8 +79,16 @@
     align-items: center;
     justify-content: center;
   }
+  .catalog-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .navigation {
     margin-top: 10px;
+  }
+  .catalog-menu {
+    display: none;
   }
   .sidebar__mobile {
     display: none;

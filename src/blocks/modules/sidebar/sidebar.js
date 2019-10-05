@@ -8,6 +8,10 @@ $('.sidebar-btn').on('click', function (e) {
     e.preventDefault();
     $('.sidebar__mobile').slideToggle();
 });
+$('.catalog-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.catalog-menu').slideToggle();
+});
 
 // Toggle class 'active' for Sidebar Colors icon.
 $('.sidebar__colors .custom-control').on('click', function (e) {
@@ -19,6 +23,9 @@ $('.sidebar__colors .custom-control').on('click', function (e) {
 (function($){
     $(window).on("load",function(){
         $(".sidebar__check_list").mCustomScrollbar({
+            theme:"dark-3"
+        });
+        $(".search__result_block").mCustomScrollbar({
             theme:"dark-3"
         });
     });
