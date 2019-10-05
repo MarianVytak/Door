@@ -57,3 +57,12 @@ img {
 .read-more-content {
   display: none;
 }
+
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: .3s;
+}

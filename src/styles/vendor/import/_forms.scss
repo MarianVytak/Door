@@ -90,6 +90,11 @@
   background-color: $blue;
   font-size: 20px;
   color: $white;
+  img {
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
 }
 
 .search__result {
