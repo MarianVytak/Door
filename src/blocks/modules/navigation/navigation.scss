@@ -70,7 +70,7 @@
   }
 }
 
-.navigation__list_item_content {
+.navigation__list_item_content, .navigation__list_item_sub_content {
   padding: 15px 20px;
   background-color: $white;
   display: none;
