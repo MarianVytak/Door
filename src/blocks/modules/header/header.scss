@@ -151,6 +151,12 @@
       }
     }
   }
+  .search__result_item_link {
+    align-items: flex-start;
+  }
+  .search__result_item_link_img {
+    padding-top: 5px;
+  }
   .counter {
     padding: 0 15px 0 60px;
   }

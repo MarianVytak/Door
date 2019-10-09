@@ -10,8 +10,7 @@ import "%modules%/product/product";
 import "%modules%/basket/basket";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
-import "../../../node_modules/fancybox/dist/js/jquery.fancybox";
-import "./libs/fancybox-customs"
+import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 import "./libs/counter";
 import "./libs/range";
