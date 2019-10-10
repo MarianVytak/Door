@@ -54,10 +54,7 @@
     padding: 0 1em;
     border-radius: 0;
     border: none;
-    background-color: $main;
-    .modal-title {
-      color: $white;
-    }
+    background-color: transparent;
   }
   .close {
     position: absolute;
@@ -73,7 +70,7 @@
     outline: none;
     font-weight: 100;
     font-size: 3em;
-    color: $white;
+    color: $black;
     &:focus {
       outline: none;
     }
@@ -83,7 +80,7 @@
       left: 50%;
       width: 20px;
       height: 2px;
-      background-color: $white;
+      background-color: $black;
       &:nth-child(1) {
         transform: translate(-50%,-50%) rotate(45deg);
       }
