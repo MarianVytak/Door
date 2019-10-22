@@ -66,6 +66,17 @@ $('.commodity__add_link .link').on('click', function(e){
     $(postId).toggleClass('hide');
 });
 
+// Card 4 colors
+const colorItem = $('.commodity__color_list_item');
+const colorInput = $('.commodity__color_input input');
+colorItem.on('click', function (e) {
+    e.preventDefault();
+    colorItem.removeClass('active');
+    $(this).addClass('active');
+    let thisColorItemName = $(this).children('.commodity__color_list_item_name').text();
+    colorInput.attr('placeholder', thisColorItemName);
+});
+
 // Custom Scrollbar
 (function($){
     $(window).on("load",function(){

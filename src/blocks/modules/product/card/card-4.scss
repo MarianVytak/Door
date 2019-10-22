@@ -1,0 +1,102 @@
+.commodity__door {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+}
+
+.commodity__color {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.commodity__color_box {
+  position: relative;
+  width: 100%;
+  max-width: 402px;
+  margin-left: 25px;
+  .dropdown-toggle:after {
+    display: none;
+  }
+  &.show {
+    .commodity__color_input_arrow {
+      transform: rotate(0);
+    }
+  }
+}
+
+.commodity__color_input {
+  position: relative;
+  cursor: pointer;
+  input {
+    padding-right: 3em;
+  }
+}
+
+.commodity__color_input_arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  width: 35px;
+  height: 35px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='8' viewBox='0 0 16 8'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%2347bce3' d='M0 5.78L7.92-.007l.083.23.083-.23 7.917 5.785L15.198 8 8.003 2.745.81 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .3s;
+}
+
+.commodity__color_menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 0;
+  .mCustomScrollBox {
+    width: 100%;
+  }
+  .mCSB_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
+}
+
+.commodity__color_list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 294px;
+}
+
+.commodity__color_list_item {
+  width: 95px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #f5f7fa;
+  }
+  &.active {
+    .commodity__color_list_item_name {
+      color: $blue;
+    }
+  }
+}
+
+.commodity__color_list_item_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 60px;
+    border-radius: 50%;
+  }
+}
+
+.commodity__color_list_item_name {
+  font-size: 12px;
+  text-align: center;
+}
