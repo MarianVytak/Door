@@ -42,6 +42,10 @@
   border: 1px solid #e7e7e7;
   .commodity__slider_item {
     display: flex !important;
+    img {
+      width: 100%;
+      max-width: 255px;
+    }
   }
 }
 
