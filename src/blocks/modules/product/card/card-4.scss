@@ -160,3 +160,59 @@
   margin-top: 10px;
   font-size: 12px;
 }
+
+.card-4__door {
+  position: relative;
+  width: 100%;
+  height: 565px;
+  margin-top: 30px;
+  img {
+    width: 100%;
+  }
+}
+
+.commodity__door_img,
+.commodity__door_outlet-big,
+.commodity__door_outlet-small,
+.commodity__door_bar,
+.commodity__door_jamb,
+.commodity__door_cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 255px;
+}
+
+.commodity__door_img {
+  top: 24px;
+  max-width: 207px;
+  z-index: 1;
+}
+
+.commodity__door_outlet-big {
+  top: auto;
+  bottom: 15px;
+  z-index: 5;
+}
+
+.commodity__door_outlet-small {
+  top: 18px;
+  z-index: 5;
+}
+
+.commodity__door_bar {
+  z-index: 4;
+}
+
+.commodity__door_jamb {
+  top: 4px;
+  z-index: 2;
+}
+
+.commodity__door_cap {
+  top: -17px;
+  max-width: 281px;
+  z-index: 3;
+}
