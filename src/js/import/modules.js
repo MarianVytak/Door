@@ -13,4 +13,5 @@ import "%modules%/modal/modal";
 import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 import "./libs/counter";
+import "./libs/tabs";
 import "./libs/range";
