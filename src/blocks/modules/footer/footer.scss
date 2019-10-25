@@ -158,9 +158,6 @@
     width: 100%;
     margin: 20px 0;
   }
-  .footer__networks_list {
-    margin-left: 0;
-  }
 }
 @include media-breakpoint-down(sm) {
   .footer__contacts_list_item {
@@ -179,6 +176,9 @@
   .footer__networks {
     .h5 {
       display: none;
+    }
+    .footer__networks_list {
+      margin-left: 0;
     }
   }
   .footer__networks_list_item {
