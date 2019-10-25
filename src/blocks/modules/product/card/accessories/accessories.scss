@@ -17,6 +17,9 @@
       color: $blue;
     }
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .accessories__item_link_img {

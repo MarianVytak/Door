@@ -141,8 +141,6 @@
   font-size: 26px;
 }
 
-.commodity__prices {}
-
 .commodity__prices_old {
   font-weight: 500;
   font-size: 26px;
@@ -522,6 +520,9 @@
   }
 }
 @include media-breakpoint-down(xs) {
+  .commodity__prices {
+    text-align: center;
+  }
   .commodity__title {
     text-align: center;
   }
