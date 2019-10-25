@@ -510,7 +510,10 @@
       grid-template-columns: 80px 1fr 1fr 115px;
       grid-template-areas:
               'img name name name'
-              'price count sum btn'
+              'price count sum btn';
+      &:first-child {
+        display: none;
+      }
     }
   }
 }
@@ -562,7 +565,7 @@
       grid-template-areas:
               'img name name'
               'price count sum'
-              '. . btn'
+              '. . btn';
     }
   }
 }
