@@ -247,6 +247,12 @@
   }
 }
 
+@include media-breakpoint-down(lg) {
+  .catalog__list_item_watch {
+    display: none;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .catalog__list {
     li {
