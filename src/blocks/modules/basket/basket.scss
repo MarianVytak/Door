@@ -65,6 +65,15 @@
 
 .basket__payment_content, .basket__payment_content_child {
   display: none;
+  margin-bottom: 1rem;
+  &.active {
+    display: block;
+  }
+}
+
+.basket__calculation_content,
+.calculation__content {
+  display: none;
   &.active {
     display: block;
   }

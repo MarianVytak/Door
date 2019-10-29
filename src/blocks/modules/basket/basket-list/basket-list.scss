@@ -182,7 +182,7 @@
     -ms-grid-columns: 40px 1fr 1fr 1fr 35px;
     grid-template-areas:
       'img name name name close'
-      'rice price count sum sum';
+      'price price count sum sum';
     padding: 5px 0;
     &:first-child {
       display: none;

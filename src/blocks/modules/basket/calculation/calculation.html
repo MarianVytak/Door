@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row basket__calculation_content active">
     <div class="col-lg-10">
 
         <form class="form basket__form basket__form_calculation">
@@ -24,121 +24,124 @@
 
             <div class="h5 basket__form_calculation_subtitle">Подъем дверей на этаж:</div>
 
-            <div class="row">
-                <div class="col-sm-6 order-2 order-sm-1">
-                    <div class="form-group">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="calculation-1" name="calculation" class="custom-control-input">
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <div class="form-group mb-0">
+                        <div class="custom-control custom-radio custom-control-inline calculation__link" data-target=".calculation-content-1">
+                            <input type="radio" id="calculation-1" name="calculation" class="custom-control-input" checked>
                             <label class="custom-control-label font-weight-medium" for="calculation-1">Без
                                 подъема</label>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 order-1 order-sm-2">
+                <div class="col-sm-6">
                     <div class="h5 text-main pl-4 pl-sm-0">Бесплатно</div>
                 </div>
             </div>
 
             <div class="form-group">
-                <div class="custom-control custom-radio custom-control-inline">
+                <div class="custom-control custom-radio custom-control-inline calculation__link" data-target=".calculation-content-2">
                     <input type="radio" id="calculation-2" name="calculation" class="custom-control-input">
                     <label class="custom-control-label font-weight-medium" for="calculation-2">По лестнице</label>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6 order-2 order-sm-1">
-                    <div class="form-group pl-4">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="stairs-1" name="stairs" class="custom-control-input">
-                            <label class="custom-control-label font-weight-medium" for="stairs-1">
-                                Подъём входных дверей
-                            </label>
+            <div class="calculation__content calculation-content-2">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group mb-0 pl-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="stairs-1" name="stairs" class="custom-control-input">
+                                <label class="custom-control-label font-weight-medium" for="stairs-1">
+                                    Подъём входных дверей
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="pl-4 pl-sm-0">
+                            <div class="h5 text-main pl-4 pl-sm-0">1 эт. / 700 руб.</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 order-1 order-sm-2">
-                    <div class="pl-4 pl-sm-0">
-                        <div class="h5 text-main pl-4 pl-sm-0">1 эт. / 700 руб.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 order-2 order-sm-1">
-                    <div class="form-group pl-4">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="stairs-2" name="stairs" class="custom-control-input">
-                            <label class="custom-control-label font-weight-medium" for="stairs-2">
-                                Подъём межкомнатных дверей
-                            </label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group mb-0 pl-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="stairs-2" name="stairs" class="custom-control-input">
+                                <label class="custom-control-label font-weight-medium" for="stairs-2">
+                                    Подъём межкомнатных дверей
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 order-1 order-sm-2">
-                    <div class="pl-4 pl-sm-0">
-                        <div class="h5 text-main pl-4 pl-sm-0">1 эт. / 150 руб. - за 1 шт</div>
+                    <div class="col-sm-6">
+                        <div class="pl-4 pl-sm-0">
+                            <div class="h5 text-main pl-4 pl-sm-0">1 эт. / 150 руб. - за 1 шт</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <div class="custom-control custom-radio custom-control-inline">
+                <div class="custom-control custom-radio custom-control-inline calculation__link" data-target=".calculation-content-3">
                     <input type="radio" id="calculation-3" name="calculation" class="custom-control-input">
                     <label class="custom-control-label font-weight-medium" for="calculation-3">На лифте</label>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6 order-2 order-sm-1">
-                    <div class="form-group pl-4">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="elevator-1" name="elevator" class="custom-control-input">
-                            <label class="custom-control-label font-weight-medium" for="elevator-1">
-                                Подъём входных дверей
-                            </label>
+            <div class="calculation__content calculation-content-3">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group mb-0 pl-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="elevator-1" name="elevator" class="custom-control-input">
+                                <label class="custom-control-label font-weight-medium" for="elevator-1">
+                                    Подъём входных дверей
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="pl-4 pl-sm-0">
+                            <div class="h5 text-main pl-4 pl-sm-0">700 руб.</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 order-1 order-sm-2">
-                    <div class="pl-4 pl-sm-0">
-                        <div class="h5 text-main pl-4 pl-sm-0">700 руб.</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group mb-0 pl-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="elevator-2" name="elevator" class="custom-control-input">
+                                <label class="custom-control-label font-weight-medium" for="elevator-2">
+                                    Подъём межкомнатных дверей
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 order-2 order-sm-1">
-                    <div class="form-group pl-4">
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="elevator-2" name="elevator" class="custom-control-input">
-                            <label class="custom-control-label font-weight-medium" for="elevator-2">
-                                Подъём межкомнатных дверей
-                            </label>
+                    <div class="col-sm-6">
+                        <div class="pl-4 pl-sm-0">
+                            <div class="h5 text-main pl-4 pl-sm-0">150 руб. - за 1 шт</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 order-1 order-sm-2">
-                    <div class="pl-4 pl-sm-0">
-                        <div class="h5 text-main pl-4 pl-sm-0">150 руб. - за 1 шт</div>
-                    </div>
-                </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="form-group">
-                        <label class="font-weight-medium" for="floor">Ваш этаж:</label>
-                        <input type="text" id="floor" placeholder="17" required>
+            <div class="calculation__content calculation-content-2 calculation-content-3">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="form-group">
+                            <label class="font-weight-medium" for="floor">Ваш этаж:</label>
+                            <input type="text" id="floor" placeholder="17" required>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="form-group">
-                        <label class="font-weight-medium" for="doors">Кол-во дверей, штук:</label>
-                        <input type="text" id="doors" placeholder="10" required>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="form-group">
+                            <label class="font-weight-medium" for="doors">Кол-во дверей, штук:</label>
+                            <input type="text" id="doors" placeholder="10" required>
+                        </div>
                     </div>
                 </div>
             </div>

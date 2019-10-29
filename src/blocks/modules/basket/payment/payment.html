@@ -4,7 +4,7 @@
     <div class="basket__payment_link" data-target="#payment-content-2">
         <div class="form-group">
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="payment-2" name="payment" class="custom-control-input">
+                <input type="radio" id="payment-2" name="payment" class="custom-control-input" checked>
                 <label class="custom-control-label" for="payment-2">Оплата для физических лиц</label>
             </div>
         </div>
@@ -14,15 +14,36 @@
     <div class="basket__payment_content active" id="payment-content-2">
         <div class="pl-4">
 
+            <div class="basket__payment_link_child" data-target="#payment-content-child-2">
+                <div class="form-group">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="payment-upon" name="payment-type" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="payment-upon">При получении</label>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__payment_content_child active" id="payment-content-child-2">
+                <div class="pl-4">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="payment-cash" name="payment-upon" class="custom-control-input">
+                        <label class="custom-control-label" for="payment-cash">Наличными</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="payment-bank" name="payment-upon" class="custom-control-input">
+                        <label class="custom-control-label" for="payment-bank">Банковской картой</label>
+                    </div>
+                </div>
+            </div>
+
             <div class="basket__payment_link_child" data-target="#payment-content-child-1">
                 <div class="form-group">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="payment-site" name="payment-type" class="custom-control-input" checked>
+                        <input type="radio" id="payment-site" name="payment-type" class="custom-control-input">
                         <label class="custom-control-label" for="payment-site">Оплата на сайте</label>
                     </div>
                 </div>
             </div>
-            <div class="basket__payment_content_child active" id="payment-content-child-1">
+            <div class="basket__payment_content_child" id="payment-content-child-1">
                 <ul class="payment__site_list">
                     <li class="payment__site_list_item">
                         <input type="radio" id="payment-site-1" name="payment-site-type" class="custom-control-input">
@@ -80,26 +101,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="basket__payment_link_child" data-target="#payment-content-child-2">
-                <div class="form-group">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="payment-upon" name="payment-type" class="custom-control-input">
-                        <label class="custom-control-label" for="payment-upon">При получении</label>
-                    </div>
-                </div>
-            </div>
-            <div class="basket__payment_content_child" id="payment-content-child-2">
-                <div class="pl-4">
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="payment-cash" name="payment-upon" class="custom-control-input">
-                        <label class="custom-control-label" for="payment-cash">Наличными</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="payment-bank" name="payment-upon" class="custom-control-input">
-                        <label class="custom-control-label" for="payment-bank">Банковской картой</label>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
@@ -108,7 +109,7 @@
     <div class="basket__payment_link" data-target="#payment-content-1">
         <div class="form-group">
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="payment-1" name="payment" class="custom-control-input" checked>
+                <input type="radio" id="payment-1" name="payment" class="custom-control-input">
                 <label class="custom-control-label" for="payment-1">Оплата для юридических лиц</label>
             </div>
         </div>

@@ -163,8 +163,12 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
   width: 100%;
   max-width: 255px;
+  &.active {
+    display: block;
+  }
 }
 
 .commodity__door_img {
