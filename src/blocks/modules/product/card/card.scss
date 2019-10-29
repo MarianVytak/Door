@@ -43,8 +43,8 @@
   .commodity__slider_item {
     display: flex !important;
     img {
-      width: 100%;
       max-width: 255px;
+      max-height: 450px;
     }
   }
 }
