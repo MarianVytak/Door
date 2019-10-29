@@ -12,5 +12,11 @@
   }
 }
 
+@include media-breakpoint-down(lg) {
+  .product {
+    padding-top: 65px;
+  }
+}
+
 @import "card/card";
 @import "card/card-4";
