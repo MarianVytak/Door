@@ -78,17 +78,18 @@ $('.commodity__add_link .link').on('click', function(e){
 const colorItem = $('.commodity__color_list_item');
 colorItem.on('click', function (e) {
     e.preventDefault();
-    let colorItemThis = $(this).attr('aria-labelledby');
+    let colorItemThis = $(this).attr('data-class');
     $(colorItemThis).removeClass('active');
     $(this).addClass('active');
     let thisColorItemName = $(this).children('.commodity__color_list_item_name').text();
-    let colorInput = $(this).attr('data-target');
+    let colorInput = $(this).attr('data-id');
     $(colorInput).children('input').attr('placeholder', thisColorItemName);
 });
 
 $('.commodity__execution_deaf').on('click', function () {
     $('.commodity__execution_glass_content').removeClass('active');
     $('.commodity__door_glass_options').removeClass('active');
+    $('.commodity__door_glass_lattice').removeClass('active');
 });
 $('.commodity__execution_glass').on('click', function () {
     $('.commodity__execution_glass_content').addClass('active');

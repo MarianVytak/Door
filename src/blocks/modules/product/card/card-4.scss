@@ -171,7 +171,8 @@
 .commodity__door_bar,
 .commodity__door_jamb,
 .commodity__door_cap,
-.commodity__door_glass_options {
+.commodity__door_glass_options,
+.commodity__door_glass_lattice {
   position: absolute;
   top: 0;
   left: 50%;
@@ -222,6 +223,12 @@
   z-index: 4;
 }
 
+.commodity__door_glass_lattice {
+  top: 24px;
+  max-width: 207px;
+  z-index: 5;
+}
+
 .commodity__list {
   height: auto;
   .commodity__color_list_item {
@@ -266,15 +273,8 @@
   }
 }
 
-.commodity__choice_glass-options {
+.commodity__choice_glass-options,
+.commodity__choice_glass-picture {
   display: flex;
   flex-wrap: wrap;
-}
-
-.commodity__choice_glass-picture {
-  display: none;
-  flex-wrap: wrap;
-  &.active {
-    display: flex;
-  }
 }

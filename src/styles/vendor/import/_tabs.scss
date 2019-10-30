@@ -1,3 +1,10 @@
+.tabs-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
 .list-group {
   display: flex;
   align-items: flex-end;
