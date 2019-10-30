@@ -76,13 +76,22 @@ $('.commodity__add_link .link').on('click', function(e){
 
 // Card 4 colors
 const colorItem = $('.commodity__color_list_item');
-const colorInput = $('.commodity__color_input input');
 colorItem.on('click', function (e) {
     e.preventDefault();
-    colorItem.removeClass('active');
+    let colorItemThis = $(this).attr('aria-labelledby');
+    $(colorItemThis).removeClass('active');
     $(this).addClass('active');
     let thisColorItemName = $(this).children('.commodity__color_list_item_name').text();
-    colorInput.attr('placeholder', thisColorItemName);
+    let colorInput = $(this).attr('data-target');
+    $(colorInput).children('input').attr('placeholder', thisColorItemName);
+});
+
+$('.commodity__execution_deaf').on('click', function () {
+    $('.commodity__execution_glass_content').removeClass('active');
+    $('.commodity__door_glass_options').removeClass('active');
+});
+$('.commodity__execution_glass').on('click', function () {
+    $('.commodity__execution_glass_content').addClass('active');
 });
 
 // Custom Scrollbar

@@ -10,6 +10,7 @@ $(function () {
     const tabLink = '.tabs-link';
     const tabLink2 = '.tabs-2-link';
     const tabContent = '.tabs-content';
+    const tabContent2 = '.tabs-2-content';
 
     tab.on('click', function (e) {
         e.preventDefault();
@@ -29,13 +30,15 @@ $(function () {
         let thisTab = $(this).attr('aria-labelledby');
         let thisContent = $(this).attr('data-target');
 
-        // $(thisContent + ' ' + tabLink2).removeClass('active');
-        $(thisContent + ' ' + tabContent).removeClass('active');
         if (!$(this).hasClass('active')) {
             $(thisContent + ' ' + tabLink2).removeClass('active');
         }
         $(this).toggleClass('active');
-        $(thisContent + ' ' + thisTab).addClass('active');
+
+        if (!$(thisContent + ' ' + thisTab).hasClass('active')) {
+            $(thisContent + ' ' + tabContent2).removeClass('active');
+        }
+        $(thisContent + ' ' + thisTab).toggleClass('active');
     });
 
 });

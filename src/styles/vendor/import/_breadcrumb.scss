@@ -1,13 +1,16 @@
 .breadcrumb {
+  flex-wrap: nowrap;
   margin-bottom: 20px;
   padding: 0.5rem 0;
   background-color: transparent;
+  overflow-x: auto;
 }
 
 .breadcrumb-item {
   font-weight: 500;
   font-size: 0.875rem;
   color: #8f8f8f;
+  white-space: nowrap;
   a {
     color: #8f8f8f;
     &:hover {
