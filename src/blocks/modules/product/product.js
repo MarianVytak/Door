@@ -94,6 +94,10 @@ $('.commodity__execution_deaf').on('click', function () {
 $('.commodity__execution_glass').on('click', function () {
     $('.commodity__execution_glass_content').addClass('active');
 });
+$('.commodity__processing_none').on('click', function () {
+    $('.commodity__door_glass-picture').removeClass('active');
+});
+
 
 // Custom Scrollbar
 (function($){

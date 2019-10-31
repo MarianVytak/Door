@@ -172,7 +172,8 @@
 .commodity__door_jamb,
 .commodity__door_cap,
 .commodity__door_glass_options,
-.commodity__door_glass_lattice {
+.commodity__door_glass_lattice,
+.commodity__door_glass-picture {
   position: absolute;
   top: 0;
   left: 50%;
@@ -203,7 +204,7 @@
 }
 
 .commodity__door_bar {
-  z-index: 4;
+  z-index: 3;
 }
 
 .commodity__door_jamb {
@@ -214,7 +215,7 @@
 .commodity__door_cap {
   top: -17px;
   max-width: 281px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .commodity__door_glass_options {
@@ -224,6 +225,12 @@
 }
 
 .commodity__door_glass_lattice {
+  top: 24px;
+  max-width: 207px;
+  z-index: 5;
+}
+
+.commodity__door_glass-picture {
   top: 24px;
   max-width: 207px;
   z-index: 5;
