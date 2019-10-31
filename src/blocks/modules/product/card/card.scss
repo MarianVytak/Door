@@ -85,6 +85,9 @@
 
 .commodity__slider_small {
   padding: 0 15px;
+  .slick-list {
+    padding: 5px 0;
+  }
   .slick-arrow {
     width: 10px;
     height: 30px;
@@ -113,6 +116,9 @@
 
 .commodity__slider_small_item {
   padding: 0 15px;
+  &:focus {
+    outline: none;
+  }
 }
 
 .commodity__slider_small_item_box {
@@ -467,6 +473,12 @@
   }
 }
 @include media-breakpoint-down(sm) {
+  .commodity__slider_small {
+    margin-top: 10px;
+  }
+  .commodity__warning {
+    display: none;
+  }
   .commodity__info_stock {
     margin-right: 30px;
   }
