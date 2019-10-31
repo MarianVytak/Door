@@ -3,6 +3,8 @@
 }
 
 .commodity__door {
+  position: sticky;
+  top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
