@@ -521,6 +521,9 @@
   }
 }
 @include media-breakpoint-down(xs) {
+  .commodity__size {
+    margin-bottom: 15px;
+  }
   .commodity__prices {
     text-align: center;
   }
