@@ -90,7 +90,9 @@ $('.commodity__execution_deaf').on('click', function () {
     $('.commodity__execution_glass_content').removeClass('active');
     $('.commodity__door_glass_options').removeClass('active');
     $('.commodity__door_glass_lattice').removeClass('active');
+    $('.commodity__door_glass-picture').removeClass('active');
     $('.commodity__choice_glass-options .commodity__color_list_item').removeClass('active');
+    $('.commodity__choice_glass-picture .commodity__color_list_item').removeClass('active');
 });
 $('.commodity__execution_glass').on('click', function () {
     $('.commodity__execution_glass_content').addClass('active');

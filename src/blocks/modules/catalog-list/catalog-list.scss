@@ -64,6 +64,10 @@
 }
 
 .catalog__list_item_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   font-weight: 500;
   color: $black;
   &:hover {
