@@ -2,41 +2,60 @@ import $ from  'jquery';
 
 'use strict';
 
-const catalogContentLink = $('.js-navigation-link');
-const catalogSubContentLink = $('.js-sub-navigation-link');
-const catalogContentList = $('.navigation__list_item_content');
-const catalogSubContentList = $('.navigation__list_item_sub_content');
+const catalogContentLinkLvl_1 = $('.js-navigation-link');
+const catalogContentLinkLvl_2 = $('.js-sub-navigation-link');
+const catalogContentLinkLvl_3 = $('.js-sub2-navigation-link');
+const catalogContentListLvl_1 = $('.navigation__list_item_content');
+const catalogContentListLvl_2 = $('.navigation__list_item_sub_content');
+const catalogContentListLvl_3 = $('.navigation__list_item_sub2_content');
 
 // Відкрити/закрити боковий список у Каталозі Товарів
-catalogContentLink.on('click', function (e) {
+catalogContentLinkLvl_1.on('click', function (e) {
     e.preventDefault();
     let catalogContentListThis = $(this).attr('data-target');
 
     if (!$(this).hasClass('active')) {
-        catalogContentLink.removeClass('active');
+        catalogContentLinkLvl_1.removeClass('active');
     }
     $(this).toggleClass('active');
 
     if (!$(catalogContentListThis).hasClass('active')) {
-        catalogContentList.slideUp();
-        catalogContentList.removeClass('active');
+        catalogContentListLvl_1.slideUp();
+        catalogContentListLvl_1.removeClass('active');
     }
     $(catalogContentListThis).slideToggle();
     $(catalogContentListThis).toggleClass('active');
 });
 
-catalogSubContentLink.on('click', function (e) {
+catalogContentLinkLvl_2.on('click', function (e) {
     e.preventDefault();
     let catalogSubContentListThis = $(this).attr('data-target');
 
     if (!$(this).hasClass('active')) {
-        catalogSubContentLink.removeClass('active');
+        catalogContentLinkLvl_2.removeClass('active');
     }
     $(this).toggleClass('active');
 
     if (!$(catalogSubContentListThis).hasClass('active')) {
-        catalogSubContentList.slideUp();
-        catalogSubContentList.removeClass('active');
+        catalogContentListLvl_2.slideUp();
+        catalogContentListLvl_2.removeClass('active');
+    }
+    $(catalogSubContentListThis).slideToggle();
+    $(catalogSubContentListThis).toggleClass('active');
+});
+
+catalogContentLinkLvl_3.on('click', function (e) {
+    e.preventDefault();
+    let catalogSubContentListThis = $(this).attr('data-target');
+
+    if (!$(this).hasClass('active')) {
+        catalogContentLinkLvl_3.removeClass('active');
+    }
+    $(this).toggleClass('active');
+
+    if (!$(catalogSubContentListThis).hasClass('active')) {
+        catalogContentListLvl_3.slideUp();
+        catalogContentListLvl_3.removeClass('active');
     }
     $(catalogSubContentListThis).slideToggle();
     $(catalogSubContentListThis).toggleClass('active');
